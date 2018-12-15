@@ -22,12 +22,6 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\%.*\%</string>
-					<key>name</key>
-					<string>skript.percent</string>
-				</dict>
-				<dict>
-					<key>match</key>
 					<string>(game( |)mode|(|all )player(s|)|victim|attacker|sender|loop-player|loop-value|loop-index|loop-number|uuid|location|world|entit(y|ies))</string>
 					<key>name</key>
 					<string>skript.playerobjects</string>
@@ -216,14 +210,6 @@
 							<string>skript.text.newline</string>
 						</dict>
 						<dict>
-							<key>begin</key>
-							<string>\%</string>
-							<key>end</key>
-							<string>(\%)</string>
-							<key>name</key>
-							<string>skript.text.variable</string>
-						</dict>
-						<dict>
 							<key>match</key>
 							<string>((&amp;|§)0|\&lt;black\&gt;)</string>
 							<key>name</key>
@@ -354,6 +340,14 @@
 							<string>((&amp;|§)r|\&lt;(reset|r)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.r</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\%</string>
+							<key>end</key>
+							<string>(\%)</string>
+							<key>name</key>
+							<string>skript.text.variable</string>
 						</dict>
 					</array>
 				</dict>
@@ -1571,13 +1565,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s*|\t*)(get|patterns|check|set|return(| type)|loop of|parse)\:</string>
+					<string>^(\s*|\t*)(get|patterns|check|set|return(| type)|loop of|parse)(?=\:)</string>
 					<key>name</key>
 					<string>skript.skriptmirror.method</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?i)( |\s*|\t*)(if|else if|else|while|loop|function|return|continue)</string>
+					<string>(?i)( |\s*|\t*)\b(if|else if|else|while|loop|function|return|continue)\b</string>
 					<key>name</key>
 					<string>skript.operator</string>
 				</dict>
@@ -1586,6 +1580,14 @@
 					<string>^command </string>
 					<key>name</key>
 					<string>skript.command</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\%</string>
+					<key>end</key>
+					<string>\%</string>
+					<key>name</key>
+					<string>skript.percent</string>
 				</dict>
 			</array>
 		</dict>
