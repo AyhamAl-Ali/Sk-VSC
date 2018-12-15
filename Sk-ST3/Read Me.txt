@@ -1,0 +1,12 @@
+﻿Note: I take no credits for this Syntax Highlighting, all credits goes to @HYPExMon5ter , he is the creator of this, I've only added some new syntaxes, edited some and made my own syntax highlighting (colors).
+
+• I never liked coding without getting in the mood of coding, which requires some modern, dark themes and a nice syntax highlighting, I was lucky to find HYPExMon5ter's Syntax highlighting and I've used it for some time but then got bored a bit again.. so I decided to make my own forked version and learn some very simple stuff about Syntax Highlighting just so I can make my this and use it.
+
+Steps:
+
+Open the two files included with this .ZIP and choose what you like either with or without Material Theme then follow the Read Me file in that folder you chose.
+
+
+- Ayham Al-Ali
+
+
