@@ -1,7 +1,7 @@
 # Sk-ST3
 A Modern, Colorful and creative Syntax Highlighting for Skript on ST3
 
-* Note: This Syntax Highlighting belongs to @HYPExMon5ter and I've only forked this because I liked to make my own version of this Resource.
+Note: This Syntax Highlighting belongs to @HYPExMon5ter and I've only forked this because I liked to make my own version of this Resource.
 
 ```
 
