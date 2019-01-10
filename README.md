@@ -19,3 +19,5 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 
 ```
+
+> Some more info? [Click Here](https://forums.skunity.com/resources/sk-st3-syntax-highlighting-open-source.710/)
