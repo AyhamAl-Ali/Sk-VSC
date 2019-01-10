@@ -62,8 +62,6 @@
 			<string>skript.section</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
 				<key>foreground</key>
 				<string>#E3E3E3</string>
 				<key>background</key>
@@ -77,8 +75,6 @@
 			<string>skript.section.ws</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold   </string>
 				<key>background</key>
 				<string></string>
 				<key>foreground</key>
@@ -92,8 +88,6 @@
 			<string>skript.section.skquery</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold   </string>
 				<key>background</key>
 				<string></string>
 				<key>foreground</key>
@@ -107,8 +101,6 @@
 			<string>skript.section.meta</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> italic</string>
 				<key>foreground</key>
 				<string>#DBDBDB</string>
 			</dict>
@@ -133,8 +125,6 @@
 			<string>skript.operator</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold italic</string>
 				<key>foreground</key>
 				<string>#D885FCD9</string>
 			</dict>
@@ -159,8 +149,6 @@
 			<string>skript.text.variable</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
 				<key>foreground</key>
 				<string>#E5F8FF</string>
 			</dict>
@@ -187,8 +175,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FFF952</string>
-				<key>fontStyle</key>
-				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -202,8 +188,6 @@
 				<string>#EDEDED</string>
 				<key>background</key>
 				<string></string>
-				<key>fontStyle</key>
-				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -213,8 +197,6 @@
 			<string>skript.boolean.false</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> bold   italic</string>
 				<key>foreground</key>
 				<string>#FF5555</string>
 				<key>background</key>
@@ -228,8 +210,6 @@
 			<string>skript.boolean.true</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> bold italic</string>
 				<key>foreground</key>
 				<string>#55FF55</string>
 				<key>background</key>
@@ -245,8 +225,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#DD5855</string>
-				<key>fontStyle</key>
-				<string> italic </string>
 				<key>background</key>
 				<string>#FF8C8C1F</string>
 			</dict>
@@ -260,8 +238,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#F77669</string>
-				<key>fontStyle</key>
-				<string> italic  bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -273,8 +249,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#F9FF8F</string>
-				<key>fontStyle</key>
-				<string> italic bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -286,8 +260,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#2BDFFF</string>
-				<key>fontStyle</key>
-				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -299,8 +271,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#E7B0FFD9</string>
-				<key>fontStyle</key>
-				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -312,8 +282,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#EDEDED</string>
-				<key>fontStyle</key>
-				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -369,8 +337,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#F8516D</string>
-				<key>fontStyle</key>
-				<string> italic </string>
 			</dict>
 		</dict>
 		<dict>
@@ -391,8 +357,6 @@
 			<string>skript.glowing</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> bold </string>
 				<key>foreground</key>
 				<string>#FFF942EB</string>
 				<key>background</key>
@@ -408,8 +372,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
-				<key>fontStyle</key>
-				<string> italic bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -432,8 +394,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#E3E3E3</string>
-				<key>fontStyle</key>
-				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -445,8 +405,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FF3838F0</string>
-				<key>fontStyle</key>
-				<string> italic bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -458,8 +416,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#E3E3E3</string>
-				<key>fontStyle</key>
-				<string> bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -471,8 +427,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#DB8CFF</string>
-				<key>fontStyle</key>
-				<string> bold italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -484,8 +438,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FF3D3D</string>
-				<key>fontStyle</key>
-				<string> bold  </string>
 			</dict>
 		</dict>
 		<dict>
@@ -495,8 +447,6 @@
 			<string>skript.text.colors</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> italic</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
@@ -510,8 +460,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
-				<key>fontStyle</key>
-				<string> italic bold</string>
 			</dict>
 		</dict>
 		<dict>
@@ -523,8 +471,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
-				<key>fontStyle</key>
-				<string> bold italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -534,8 +480,6 @@
 			<string>skript.options</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> bold italic</string>
 				<key>foreground</key>
 				<string>#F0F0F0</string>
 			</dict>
@@ -723,8 +667,6 @@
 			<string>skript.color.m</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> italic</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
@@ -736,8 +678,6 @@
 			<string>skript.color.n</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>  underline</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
@@ -749,8 +689,6 @@
 			<string>skript.color.l</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> bold</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
@@ -762,8 +700,6 @@
 			<string>skript.color.o</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> italic</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
@@ -775,8 +711,6 @@
 			<string>skript.color.k</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string> bold italic</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
