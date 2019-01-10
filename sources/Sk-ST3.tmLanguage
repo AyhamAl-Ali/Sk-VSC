@@ -28,7 +28,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( |\t+|\s+)(loop-\w+)</string>
+					<string>(\t+|\s+)(loop-\w+)</string>
 					<key>name</key>
 					<string>skript.loopobjects</string>
 				</dict>
@@ -1373,6 +1373,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>(biome|block|boolean|chunk|click types?|colou?rs?|custom ?enchantments?|damage causes?|date|difficult(y|ies)|directions?|enchantments?|enchant(ing|ment) types?|experience|game ?modes?|gui ?inventor(y|ies)|inventory actions?|inventory types?|items?|materials?|living ?entit(y|ies)|locations?|metadata holders?|money|num(ber|)s?|objects?|offline ?players?|potion((| )effect)((| )type)s?|projectile?|recipe?|regions?|server ?icons?|slot ?types?|spawn(ing|) reasons?|teleport (cause|reason|type)s?|(text|string)s?|times?|time ?periods?|durations?|time ?spans?|tree ?types?|trees?|vectors?|(visual|particle) effects?|weather ?types?|weather conditions?|weathers?|worlds?)</string>
+					<key>name</key>
+					<string>skript.types</string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>^(\s|\t)(description|usage|permission( message|)|executable by|aliases|trigger|cooldown( message| bypass| storage|))(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.meta</string>
@@ -1397,7 +1403,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^\b(stop( trigger| loop|)|(exit)|(escape)|((un|)cancel( | the )event))\b(?!=(\s+|\t+))</string>
+					<string>\b(stop( trigger| loop|)|(exit)|(escape)|((un|)cancel( | the )event))\b</string>
 					<key>name</key>
 					<string>skript.codestops</string>
 				</dict>
@@ -1583,7 +1589,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\s+|\t+)\b(if|else if|else|while|loop (?!-)|return|continue)\b</string>
+					<string>(\s+|\t+)\b(if|else if|else|while|loop(?!-)|return|continue)\b</string>
 					<key>name</key>
 					<string>skript.operator</string>
 				</dict>
