@@ -52,7 +52,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\+|\-|\*|\/|\^|(\!|)=|&gt;|&lt;|(\|\|)|\b(or)\b|\.|(\?)|\!|\@|\$|\%|\&amp;(?![abcdefmnolrk0-9])|\,)</string>
+					<string>(\+|\-|\*|\/|\^|(\!|)=|&gt;|&lt;|(\|\|)|\b(or)\b)</string>
+					<key>name</key>
+					<string>skript.logic</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>((\.)|(\?)|\!|\@|\$|\%|\&amp;(?![abcdefmnolrk0-9])|\,)</string>
 					<key>name</key>
 					<string>skript.logic</string>
 				</dict>
