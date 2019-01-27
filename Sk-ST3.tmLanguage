@@ -52,7 +52,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>test</string>
+					<string>(\+|\-|\*|\/|\^|(\!|)=|&gt;|&lt;|(\|\|)|\b(or)\b)</string>
 					<key>name</key>
 					<string>skript.logic</string>
 				</dict>
