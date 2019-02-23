@@ -22,13 +22,13 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(game( |)mode|(|all )player(s|)|victim|attacker|sender|loop-player|loop-value|loop-index|loop-number|uuid|location|world|entit(y|ies)|console)</string>
+					<string>(game( |)mode|(|all )player(s|)|victim|attacker|sender|loop-player|shooter|uuid|location|entit(y|ies)|console)</string>
 					<key>name</key>
 					<string>skript.playerobjects</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\t+|\s+)(loop-\w+)</string>
+					<string>(\t+|\s+)((loop|event)-\w+)</string>
 					<key>name</key>
 					<string>skript.loopobjects</string>
 				</dict>
@@ -407,7 +407,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(add|give|increase|set|make|remove( all| every|)|subtract|reduce|delete|clear|reset)( )</string>
+					<string>^(\s+|\t+)\b(add|give|increase|set|make|remove( all| every|)|subtract|reduce|delete|clear|reset)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -688,6 +688,12 @@
 				<dict>
 					<key>match</key>
 					<string>at ((0|1|)[0-9](am|pm)|(0|1|2|)[0-9]:(0|1|2|3|4|5|)[0-9])( in [a-zA-Z ]+|)(\:)</string>
+					<key>name</key>
+					<string>skript.section</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>((on |)packet event \w)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
@@ -1361,18 +1367,6 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)every ([a-z1-9 ]+) in (world(s|)|) ([a-zA-Z ]+)(\:)</string>
-					<key>name</key>
-					<string>skript.section</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(on |)every ([a-z1-9 ]+)(\:)</string>
-					<key>name</key>
-					<string>skript.section</string>
-				</dict>
-				<dict>
-					<key>match</key>
 					<string>(text(s|)|player(s|)|string(s|)|integer(s|)|number(s|)|offline( |)player(s|)|timespan|item(stack|(| )type|s|)|weather type|enchantment type|potion(| effect )type|entity type(s|)|livingentit(y|ies)|object(s|))</string>
 					<key>name</key>
 					<string>skript.commandargs</string>
@@ -1380,6 +1374,18 @@
 				<dict>
 					<key>match</key>
 					<string>(biome|block|boolean|chunk|click types?|colou?rs?|custom ?enchantments?|damage causes?|date|difficult(y|ies)|directions?|enchantments?|enchant(ing|ment) types?|experience|game ?modes?|gui ?inventor(y|ies)|inventory actions?|inventory types?|items?|materials?|living ?entit(y|ies)|locations?|metadata holders?|money|num(ber|)s?|objects?|offline ?players?|potion((| )effect)((| )type)s?|projectile?|recipe?|regions?|server ?icons?|slot ?types?|spawn(ing|) reasons?|teleport (cause|reason|type)s?|(text|string)s?|times?|time ?periods?|durations?|time ?spans?|tree ?types?|trees?|vectors?|(visual|particle) effects?|weather ?types?|weather conditions?|weathers?|worlds?)</string>
+					<key>name</key>
+					<string>skript.types</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(clear|sunny|sun|rainy|raining|rain|thundering|thunderstorm|thunder)</string>
+					<key>name</key>
+					<string>skript.types</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(int|byte|pnum|pinfo|short|long|float|array|pjson|penum|pentity|packets?)</string>
 					<key>name</key>
 					<string>skript.types</string>
 				</dict>
@@ -1481,13 +1487,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(clear|wait(|a )|halt(|a ))</string>
+					<string>^(\s+|\t+)(clear|delete|receive|new|wait(|a )|halt(|a ))</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(add|reduce|remove|hide|show|reveal)</string>
+					<string>^(\s+|\t+)(hide|show|reveal)</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -1500,6 +1506,12 @@
 				<dict>
 					<key>match</key>
 					<string>\b(creative|survival|spectator|adventure|named|with name|with lore|parse(d|)|and|message|permission(s|)|colo(u|)red)\b</string>
+					<key>name</key> 
+					<string>skript.expressions</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b((game|)rule)\b</string>
 					<key>name</key> 
 					<string>skript.expressions</string>
 				</dict>
@@ -1577,7 +1589,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\binventor(y|ies)\b</string>
+					<string>\b(current|top|open|) inventor(y|ies)\b</string>
 					<key>name</key>
 					<string>skript.expr.inventory</string>
 				</dict>
@@ -1595,7 +1607,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\s+|\t+)\b(if|else if|else|while|loop(?!-)|return|continue)\b</string>
+					<string>(?i)(\s+|\t+)\b(if|else if|else|while|loop(?!-)|return|continue)\b</string>
 					<key>name</key>
 					<string>skript.operator</string>
 				</dict>
