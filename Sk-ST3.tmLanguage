@@ -8,7 +8,7 @@
 		<string>yml</string>
 	</array>
 	<key>name</key>
-	<string>Sk-ST3</string>
+	<string>Sk-ST3-Test</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -22,7 +22,13 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(game( |)mode|(|all )player(s|)|victim|attacker|sender|loop-player|shooter|uuid|location|entit(y|ies)|console)</string>
+					<string>(\t+|\s+)\b(if|else if|else|while|loop(?!-)|return|continue( loop|))\b</string>
+					<key>name</key>
+					<string>skript.operator</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)(game( |)mode|(|all )player(s|)|victim|attacker|sender|loop-player|shooter|uuid of |'s uuid|(location of |'s location)|console)</string>
 					<key>name</key>
 					<string>skript.playerobjects</string>
 				</dict>
@@ -40,13 +46,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\bslot\b</string>
+					<string>\bslots?\b</string>
 					<key>name</key>
 					<string>skript.gui</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b((| |-)arg(ument(s|)|s|))\b</string>
+					<string>\b((|\w+ |-)arg(ument(s|)|s|))\b</string>
 					<key>name</key>
 					<string>skript.args</string>
 				</dict>
@@ -58,7 +64,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((\.)|(\?)|\!|\@|\$|\%|\&amp;(?![abcdefmnolrk0-9])|\,)</string>
+					<string>(?i)((\.)|(\?)|\!|\@|\$|\%|\&amp;(?![abcdefmnolrk0-9])|\,)</string>
 					<key>name</key>
 					<string>skript.logic</string>
 				</dict>
@@ -70,7 +76,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( )(as|at|by|with)( )</string>
+					<string>\b(as|at|by|with)\b</string>
 					<key>name</key>
 					<string>skript.others</string>
 				</dict>
@@ -82,133 +88,133 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)0|\&lt;black\&gt;)</string>
+					<string>(?i)((&amp;|§)0|\&lt;black\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.0</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)1|\&lt;(blue|dark blue)\&gt;)</string>
+					<string>(?i)((&amp;|§)1|\&lt;(blue|dark blue)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.1</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)2|\&lt;(green|dark green)\&gt;)</string>
+					<string>(?i)((&amp;|§)2|\&lt;(green|dark green)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.2</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)3|\&lt;(cyan|aqua|dark cyan|dark aqua)\&gt;)</string>
+					<string>(?i)((&amp;|§)3|\&lt;(cyan|aqua|dark cyan|dark aqua)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.3</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)4|\&lt;(red|dark red)\&gt;)</string>
+					<string>(?i)((&amp;|§)4|\&lt;(red|dark red)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.4</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)5|\&lt;(purple|dark purple)\&gt;)</string>
+					<string>(?i)((&amp;|§)5|\&lt;(purple|dark purple)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.5</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)6|\&lt;(orange|gold|dark yellow)\&gt;)</string>
+					<string>(?i)((&amp;|§)6|\&lt;(orange|gold|dark yellow)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.6</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)7|\&lt;(grey|light grey|gray|light gray|silver)\&gt;)</string>
+					<string>(?i)((&amp;|§)7|\&lt;(grey|light grey|gray|light gray|silver)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.7</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)8|\&lt;(dark grey|dark gray)\&gt;)</string>
+					<string>(?i)((&amp;|§)8|\&lt;(dark grey|dark gray)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.8</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)9|\&lt;(light blue)\&gt;)</string>
+					<string>(?i)((&amp;|§)9|\&lt;(light blue)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.9</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)a|\&lt;(light green|lime|lime green)\&gt;)</string>
+					<string>(?i)((&amp;|§)a|\&lt;(light green|lime|lime green)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.a</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)b|\&lt;(light cyan|light aqua)\&gt;)</string>
+					<string>(?i)((&amp;|§)b|\&lt;(light cyan|light aqua)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.b</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)c|\&lt;(pink|light red)\&gt;)</string>
+					<string>(?i)((&amp;|§)c|\&lt;(pink|light red)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.c</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)d|\&lt;(magenta|light purple)\&gt;)</string>
+					<string>(?i)((&amp;|§)d|\&lt;(magenta|light purple)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.d</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)e|\&lt;(yellow|light yellow)\&gt;)</string>
+					<string>(?i)((&amp;|§)e|\&lt;(yellow|light yellow)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.e</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)f|\&lt;white\&gt;)</string>
+					<string>(?i)((&amp;|§)f|\&lt;white\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.f</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)l|\&lt;(bold|b)\&gt;)</string>
+					<string>(?i)((&amp;|§)l|\&lt;(bold|b)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.l</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)o|\&lt;(italics|italic|i)\&gt;)</string>
+					<string>(?i)((&amp;|§)o|\&lt;(italics|italic|i)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.o</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)n|\&lt;(underlined|underline|u)\&gt;)</string>
+					<string>(?i)((&amp;|§)n|\&lt;(underlined|underline|u)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.n</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)m|\&lt;(strikethrough|strike|s)\&gt;)</string>
+					<string>(?i)((&amp;|§)m|\&lt;(strikethrough|strike|s)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.m</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)k|\&lt;magic\&gt;)</string>
+					<string>(?i)((&amp;|§)k|\&lt;magic\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.k</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((&amp;|§)r|\&lt;(reset|r)\&gt;)</string>
+					<string>(?i)((&amp;|§)r|\&lt;(reset|r)\&gt;)</string>
 					<key>name</key>
 					<string>skript.color.r</string>
 				</dict>
@@ -221,6 +227,12 @@
 					<string>skript.text</string>
 					<key>patterns</key>
 					<array>
+						<dict>
+							<key>match</key>
+							<string>(\|\||\%nl\%|\%newline\%)</string>
+							<key>name</key>
+							<string>skript.text.newline</string>
+						</dict>
 						<dict>
 							<key>begin</key>
 							<string>\%</string>
@@ -243,139 +255,133 @@
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>(\|\||\%nl\%|\%newline\%)</string>
-							<key>name</key>
-							<string>skript.text.newline</string>
-						</dict>
-						<dict>
-							<key>match</key>
-							<string>((&amp;|§)0|\&lt;black\&gt;)</string>
+							<string>(?i)((&amp;|§)0|\&lt;black\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.0</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)1|\&lt;(blue|dark blue)\&gt;)</string>
+							<string>(?i)((&amp;|§)1|\&lt;(blue|dark blue)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.1</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)2|\&lt;(green|dark green)\&gt;)</string>
+							<string>(?i)((&amp;|§)2|\&lt;(green|dark green)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.2</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)3|\&lt;(cyan|aqua|dark cyan|dark aqua)\&gt;)</string>
+							<string>(?i)((&amp;|§)3|\&lt;(cyan|aqua|dark cyan|dark aqua)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.3</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)4|\&lt;(red|dark red)\&gt;)</string>
+							<string>(?i)((&amp;|§)4|\&lt;(red|dark red)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.4</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)5|\&lt;(purple|dark purple)\&gt;)</string>
+							<string>(?i)((&amp;|§)5|\&lt;(purple|dark purple)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.5</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)6|\&lt;(orange|gold|dark yellow)\&gt;)</string>
+							<string>(?i)((&amp;|§)6|\&lt;(orange|gold|dark yellow)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.6</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)7|\&lt;(grey|light grey|gray|light gray|silver)\&gt;)</string>
+							<string>(?i)((&amp;|§)7|\&lt;(grey|light grey|gray|light gray|silver)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.7</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)8|\&lt;(dark grey|dark gray)\&gt;)</string>
+							<string>(?i)((&amp;|§)8|\&lt;(dark grey|dark gray)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.8</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)9|\&lt;(light blue)\&gt;)</string>
+							<string>(?i)((&amp;|§)9|\&lt;(light blue)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.9</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)a|\&lt;(light green|lime|lime green)\&gt;)</string>
+							<string>(?i)((&amp;|§)a|\&lt;(light green|lime|lime green)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.a</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)b|\&lt;(light cyan|light aqua)\&gt;)</string>
+							<string>(?i)((&amp;|§)b|\&lt;(light cyan|light aqua)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.b</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)c|\&lt;(pink|light red)\&gt;)</string>
+							<string>(?i)((&amp;|§)c|\&lt;(pink|light red)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.c</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)d|\&lt;(magenta|light purple)\&gt;)</string>
+							<string>(?i)((&amp;|§)d|\&lt;(magenta|light purple)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.d</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)e|\&lt;(yellow|light yellow)\&gt;)</string>
+							<string>(?i)((&amp;|§)e|\&lt;(yellow|light yellow)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.e</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)f|\&lt;white\&gt;)</string>
+							<string>(?i)((&amp;|§)f|\&lt;white\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.f</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)l|\&lt;(bold|b)\&gt;)</string>
+							<string>(?i)((&amp;|§)l|\&lt;(bold|b)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.l</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)o|\&lt;(italics|italic|i)\&gt;)</string>
+							<string>(?i)((&amp;|§)o|\&lt;(italics|italic|i)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.o</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)n|\&lt;(underlined|underline|u)\&gt;)</string>
+							<string>(?i)((&amp;|§)n|\&lt;(underlined|underline|u)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.n</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)m|\&lt;(strikethrough|strike|s)\&gt;)</string>
+							<string>(?i)((&amp;|§)m|\&lt;(strikethrough|strike|s)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.m</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)k|\&lt;magic\&gt;)</string>
+							<string>(?i)((&amp;|§)k|\&lt;magic\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.k</string>
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>((&amp;|§)r|\&lt;(reset|r)\&gt;)</string>
+							<string>(?i)((&amp;|§)r|\&lt;(reset|r)\&gt;)</string>
 							<key>name</key>
 							<string>skript.color.r</string>
 						</dict>
@@ -383,7 +389,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(ban|unban|ip(-| )ban|kick|kill|op|deop)( )</string>
+					<string>^(\t+|\s+)(ban|unban|ip(-| )ban|kick|kill|op|deop)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -395,19 +401,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(send (message |)|message |broadcast |set )</string>
+					<string>^(\t+|\s+)\b(send( message |)|message|broadcast|set)\b(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( to | in )</string>
-					<key>name</key>
-					<string>skript.effect</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>^(\s+|\t+)\b(add|give|increase|set|make|remove( all| every|)|subtract|reduce|delete|clear|reset)(?= )</string>
+					<string>^(\t+|\s+)\b(add|give|increase|set|make|remove( all| every|)|subtract|reduce|delete|clear|reset)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -419,43 +419,61 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(dye|colo(u|)r|paint)( )</string>
+					<string>^(\t+|\s+)(dye|colo(u|)r|paint)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)((execute |)(the |)(player |console |)command|)( )</string>
+					<string>^(\t+|\s+)((execute |)(the |)(player|console|sender) command)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(let|make) (player|console) execute( (the |)command|)( )</string>
+					<string>^(\t+|\s+)(open|show|close)( )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(damage|heal|repair)( )</string>
+					<string>^(\t+|\s+)(let|make) (player|console|sender) execute( (the |)command|)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(wait|halt)( for|)( )</string>
+					<string>^(\t+|\s+)(damage|heal|repair|feed)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(drop)( )</string>
+					<string>^(\t+|\s+)(wait|halt)( for|)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)((dis|)enchant)( )</string>
+					<string>^(\t+|\s+)\b(drop|play( sound|)|force|(un|)load|rotate)\b</string>
+					<key>name</key>
+					<string>skript.effect</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(to respawn|say|fly(ing|)|start)\b</string>
+					<key>name</key>
+					<string>skript.effect</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>^(\t+|\s+)((dis|)enchant)(?= )</string>
+					<key>name</key>
+					<string>skript.effect</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>^(\t+|\s+)((local(ly|)|)suppress( the|) conflict|variable save|(missing|)conjunctions?|starting( with|) expressions? warnings?)</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -467,7 +485,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(equip|make)( )</string>
+					<string>^(\t+|\s+)(equip|make)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -479,13 +497,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(create|make) (a |an |)(safe |fake |)explosion(( |)effect| (of|with) (force|strength|power)|)( )</string>
+					<string>^(\t+|\s+)(create|make) (a |an |)(safe |fake |)explosion(( |)effect| (of|with) (force|strength|power)|)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(ignite|set fire to|set|light|extinguish|strike lightning|strike lightning effect)( )</string>
+					<string>^(\t+|\s+)(ignite|set fire to|set|light|extinguish|strike lightning|strike lightning effect)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -497,43 +515,31 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(log)( )</string>
+					<string>^(\t+|\s+)(log)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( (to|in)( file(s|)|) )</string>
+					<string>((to|in)( files?))</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(close(( the|) inventory( view|) (to|of|for))|)( )</string>
+					<string>^(\t+|\s+)(close(( the|) inventory( view|) (to|of|for)))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(open|show|close)( )</string>
+					<string>^(\t+|\s+)(play)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(play)( )</string>
-					<key>name</key>
-					<string>skript.effect</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>( on | at )</string>
-					<key>name</key>
-					<string>skript.effect</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>^(\s+|\t+)((un|)poison|cure)( )</string>
+					<string>^(\t+|\s+)((un|)poison|cure)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -545,67 +551,55 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(apply( potion of|))( )</string>
+					<string>^(\t+|\s+)(apply( potion of|))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( (potion |)((of |)tier |))</string>
+					<string>^(\t+|\s+)(push|thrust)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(push|thrust)( )</string>
+					<string>\b(speed|velocity|force)\b</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( (at|with) (speed|velocity|force) )</string>
+					<string>^(\t+|\s+)((dis|e)nable pvp( in|))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)((dis|e)nable pvp( in|))( )</string>
+					<string>^(\t+|\s+)(replace( all| every|))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(replace( all| every|))( )</string>
+					<string>^(\t+|\s+)(un(\-|)shear)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(un(\-|)shear)( )</string>
+					<string>^(\t+|\s+)(shoot|let|spawn|teleport|(un|)lea(sh|d))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(shoot|let|spawn|teleport)( )</string>
+					<string>^(\t+|\s+)(close|turn off|de(-|)activate|(toggle|switch( (the |)state of))|open|turn on|activate)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( shoot )</string>
-					<key>name</key>
-					<string>skript.effect</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>^(\s+|\t+)(close|turn off|de(-|)activate|(toggle|switch( (the |)state of))|open|turn on|activate)( )</string>
-					<key>name</key>
-					<string>skript.effect</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>^(\s+|\t+)(grow|create|generate)( tree( of type|)|)( )</string>
+					<string>^(\t+|\s+)(grow|create|generate)( tree( of type|)|)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -617,7 +611,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(force|((eject|dismount) (any|the) |)passenger(s|) (of|from))( )</string>
+					<string>^(\t+|\s+)(force|((eject|dismount) (any|the) |)passenger(s|) (of|from))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -687,681 +681,673 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>at ((0|1|)[0-9](am|pm)|(0|1|2|)[0-9]:(0|1|2|3|4|5|)[0-9])( in [a-zA-Z ]+|)(\:)</string>
+					<string>^at ((0|1|)[0-9](am|pm)|(0|1|2|)[0-9]:(0|1|2|3|4|5|)[0-9])( in [a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>((on |)packet event \w)(?=\:)</string>
+					<string>^((on |)packet event \w)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)bed enter(ing|)(\:)</string>
+					<string>^(on |)bed enter(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(player |)enter(ing|)( a | )bed(\:)</string>
+					<string>^(on |)(player |)enter(ing|)( a | )bed(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)bed leav(e|ing)(\:)</string>
+					<string>^(on |)bed leav(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)( player |)leav(e|ing)( a | )bed(\:)</string>
+					<string>^(on |)( player |)leav(e|ing)( a | )bed(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)block damage(\:)</string>
+					<string>^(on |)block damage(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(block |)(min(e|ing)|break)( of [a-zA-Z ]+|)(\:)</string>
+					<string>^(on |)(block |)(min(e|ing)|break)( of [a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)bucket empty(ing|)(\:)</string>
+					<string>^(on |)bucket empty(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)( player |)empty(ing|)( a | )bucket(\:)</string>
+					<string>^(on |)( player |)empty(ing|)( a | )bucket(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)bucket fill(ing|)(\:)</string>
+					<string>^(on |)bucket fill(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)( player |)fill(ing|)( a |)bucket(\:)</string>
+					<string>^(on |)( player |)fill(ing|)( a |)bucket(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(| block )burn(|ing)(| of [a-zA-Z ]+)(\:)</string>
+					<string>^(on |)(| block )burn(|ing)(| of [a-zA-Z ]+)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)( block |)can build check(\:)</string>
+					<string>^(on |)( block |)can build check(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)chat(\:)</string>
+					<string>^(on |)chat(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)chunk (generat|populat)(e|ing)(\:)</string>
+					<string>^(on |)chunk (generat|populat)(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)chunk load(ing|)(\:)</string>
+					<string>^(on |)chunk load(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)chunk unload(ing|)(\:)</string>
+					<string>^(on |)chunk unload(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)((right|left)(-| )|)(mouse(-| )|)click(ing|)( on [a-zA-Z ]+( (with|using|holding) [a-zA-Z ]+|)|)(\:)</string>
+					<string>^(on |)((right|left)(-| )|)(mouse(-| )|)click(ing|)( on [a-zA-Z ]+( (with|using|holding) [a-zA-Z ]+|)|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)((right|left)(-| )|)(mouse(-| )|)click(ing|) (with|using|holding) ([a-zA-Z ]+ on [a-zA-Z ]+)(\:)</string>
+					<string>^(on |)((right|left)(-| )|)(mouse(-| )|)click(ing|) (with|using|holding) ([a-zA-Z ]+ on [a-zA-Z ]+)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)combust(ing|)(\:)</string>
+					<string>^(on |)combust(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>skript.text</string>
-						</dict>
-					</dict>
 					<key>match</key>
-					<string>(on |)command( \".*\"|)(\:)</string>
+					<string>^(on |)command( \".*\"|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(( |)player |)connect(ing|)(\:)</string>
+					<string>^(on |)(( |)player |)connect(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)((eat|drink)(ing|)|consum(e|ing))(( of|) [a-zA-Z ]+|)(\:)</string>
+					<string>^(on |on player |player |)((eat|drink)(ing|)|consum(e|ing))(( of|) [a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(( |)player |)craft(ing|)(( of|) [a-zA-Z ]+)(\:)</string>
+					<string>^(on |)(( |)player |)craft(ing|)(( of|) [a-zA-Z ]+)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)creeper power(\:)</string>
+					<string>^(on |)creeper power(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)damag(e|ing)( of [a-zA-Z ]+|)(\:)</string>
+					<string>^(on |)damag(e|ing)( of [a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)death( of [a-zA-Z ]+|)(\:)</string>
+					<string>^(on |)death( of [a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)dispens(e|ing)( (of |)[a-zA-Z ]+|)(\:)</string>
+					<string>^(on |)dispens(e|ing)( (of |)[a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)drop(ing|)( (of |)[a-zA-Z ]+|)(\:)</string>
+					<string>^(on |on player |player |)drop(ing|)( (of |)[a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(e|)xp(erience|)( orb | )spawn(\:)</string>
+					<string>^(on |)(e|)xp(erience|)( orb | )spawn(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)spawn of( a(n|)| )(e|)xp(erience|)( orb|)(\:)</string>
+					<string>^(on |)spawn of( a(n|)| )(e|)xp(erience|)( orb|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)explo(d(e|ing)|sion)(\:)</string>
+					<string>^(on |)explo(d(e|ing)|sion)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)explosion prime(\:)</string>
+					<string>^(on |)explosion prime(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on block |block |)fad(e|ing)( (of |)[a-zA-Z ]+|)(\:)</string>
+					<string>^(on |on block |block |)fad(e|ing)( (of |)[a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)first (join|login)(\:)</string>
+					<string>^(on |)first (join|login)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)fish(ing|)(\:)</string>
+					<string>^(on |on player |player |)fish(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on block |block |)flow(ing|)(\:)</string>
+					<string>^(on |on block |block |)flow(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)block mov(e|ing)(\:)</string>
+					<string>^(on |)block mov(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on block |block |)form(ing|)( (of |)[a-zA-Z ]+|)(\:)</string>
+					<string>^(on |on block |block |)form(ing|)( (of |)[a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)fuel burn(ing|)(\:)</string>
+					<string>^(on |)fuel burn(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)game( |)mode change( to (creative|survival|adventure))(\:)</string>
+					<string>^(on |)game( |)mode change( to (creative|survival|adventure))(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)grow( of (normal|regular|oak|pine|redwood|fir|spruce|acacia|dark oak|birch|jungle))(\:)</string>
+					<string>^(on |)grow( of (normal|regular|oak|pine|redwood|fir|spruce|acacia|dark oak|birch|jungle))(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)heal(ing|)(\:)</string>
+					<string>^(on |)heal(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(food|hunger) (level|met(er|re)|bar) chang(e|ing)(\:)</string>
+					<string>^(on |)(food|hunger) (level|met(er|re)|bar) chang(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on block |block |)ignit(e|ion)(\:)</string>
+					<string>^(on |on block |block |)ignit(e|ion)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)tool break(ing|)(\:)</string>
+					<string>^(on |on player |player |)tool break(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)break(ing|) ((a|the)|)tool(\:)</string>
+					<string>^(on |on player |player |)break(ing|) ((a|the)|)tool(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)item spawn(ing|) ((of |)[a-zA-Z ]+|)(\:)</string>
+					<string>^(on |)item spawn(ing|) ((of |)[a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)(login|logging in|join(ing|))(\:)</string>
+					<string>^(on |on player |player |)(login|logging in|join(ing|))(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)(kick|being kicked)(\:)</string>
+					<string>^(on |on player |player |)(kick|being kicked)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)leaves decay(ing|)(\:)</string>
+					<string>^(on |)leaves decay(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)level( change|)(\:)</string>
+					<string>^(on |on player |player |)level( change|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)lightning( strike|)(\:)</string>
+					<string>^(on |)lightning( strike|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(step|walk)(ing|)  (on|over) ([a-zA-Z ]+)(\:)</string>
+					<string>^(on |)(step|walk)(ing|) (on|over) ([a-zA-Z ]+)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on block |block )physics(\:)</string>
+					<string>^(on |on block |block )physics(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)(pick( |)up|picking up)( (of |)[a-zA-Z ]+)(\:)</string>
+					<string>^(on |on player |player |)(pick( |)up|picking up)( (of |)[a-zA-Z ]+)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)pig( |)zap(\:)</string>
+					<string>^(on |)pig( |)zap(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)piston extend(ing|)(\:)</string>
+					<string>^(on |)piston extend(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)piston react(ing|)(\:)</string>
+					<string>^(on |)piston react(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on block |block |)(plac(e|ing)|build(ing|))( (of |)[a-zA-Z ]+|)(\:)</string>
+					<string>^(on |on block |block |)(plac(e|ing)|build(ing|))( (of |)[a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)portal(\:)</string>
+					<string>^(on |on player |player |)portal(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)portal create(\:)</string>
+					<string>^(on |)portal create(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)portal enter(\:)</string>
+					<string>^(on |)portal enter(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)entering( a | )portal(\:)</string>
+					<string>^(on |)entering( a | )portal(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(step(ping|) on |)(a |)(pressure |)plate(\:)</string>
+					<string>^(on |)(step(ping|) on |)(a |)(pressure |)plate(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(trip|(step(ping|) on |)(a |)tripwire)(\:)</string>
+					<string>^(on |)(trip|(step(ping|) on |)(a |)tripwire)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)projectile hit(\:)</string>
+					<string>^(on |)projectile hit(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(quit(ting|)|disconnect(ing|)|log( |)out|logging out)(\:)</string>
+					<string>^(on |)(quit(ting|)|disconnect(ing|)|log( |)out|logging out)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)redstone( current| current (chang(e|ing))|chang(e|ing))(\:)</string>
+					<string>^(on |)redstone( current| current (chang(e|ing))|chang(e|ing))(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)region (enter|leave|exit)(ing|)(\:)</string>
+					<string>^(on |)region (enter|leave|exit)(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(enter|leav|exit)(ing|) of region(\:)</string>
+					<string>^(on |)(enter|leav|exit)(ing|) of region(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)respawn(ing|)(\:)</string>
+					<string>^(on |on player |player |)respawn(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on script |script |)(load|init|enable)(\:)</string>
+					<string>^(on |on script |script |)(load|init|enable)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on script |script |)(unload|stop|disable)(\:)</string>
+					<string>^(on |on script |script |)(unload|stop|disable)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on projectile |projectile |)shoot(\:)</string>
+					<string>^(on |on projectile |projectile |)shoot(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)sign (chang(e|)|edit)(ing|)(\:)</string>
+					<string>^(on |)sign (chang(e|)|edit)(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)(chang(e|)|edit)(ing|)( a|) sign(\:)</string>
+					<string>^(on |on player |player |)(chang(e|)|edit)(ing|)( a|) sign(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(server|skript) (start|load|enable)(\:)</string>
+					<string>^(on |)(server|skript) (start|load|enable)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(server|skript) (stop|unload|disable)(\:)</string>
+					<string>^(on |)(server|skript) (stop|unload|disable)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on ore |ore |)smelt(ing|)(\:)</string>
+					<string>^(on |on ore |ore |)smelt(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)smelt(ing|) of ore(\:)</string>
+					<string>^(on |)smelt(ing|) of ore(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)toggl(e|ing) sneak(\:)</string>
+					<string>^(on |on player |player |)toggl(e|ing) sneak(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)sneak toggl(e|ing)(\:)</string>
+					<string>^(on |on player |player |)sneak toggl(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)spawn(ing|)( (of |)[a-zA-Z ]+|)(\:)</string>
+					<string>^(on |)spawn(ing|)( (of |)[a-zA-Z ]+|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on world |world |)spawn change(\:)</string>
+					<string>^(on |on world |world |)spawn change(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)spread(ing|)(\:)</string>
+					<string>^(on |)spread(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)toggl(e|ing) sprint(\:)</string>
+					<string>^(on |on player |player |)toggl(e|ing) sprint(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)sprint toggl(e|ing)(\:)</string>
+					<string>^(on |on player |player |)sprint toggl(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on entity |entity |)tam(e|ing)(\:)</string>
+					<string>^(on |on entity |entity |)tam(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on entity |entity |)target(\:)</string>
+					<string>^(on |on entity |entity |)target(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on entity |entity |)un(-|)target(\:)</string>
+					<string>^(on |on entity |entity |)un(-|)target(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)teleport(ing|)(\:)</string>
+					<string>^(on |on player |player |)teleport(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)throw(ing|)( of|)( an|) egg(\:)</string>
+					<string>^(on |)throw(ing|)( of|)( an|) egg(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player |player |)egg throw(\:)</string>
+					<string>^(on |on player |player |)egg throw(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |on player(\'s|) |player(\'s|) |)(tool|item held|held item) chang(e|ing)(\:)</string>
+					<string>^(on |on player(\'s|) |player(\'s|) |)(tool|item held|held item) chang(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)vehicle create(\:)</string>
+					<string>^(on |)vehicle create(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)creat(e|ing|ion of)( a|) vehicle(\:)</string>
+					<string>^(on |)creat(e|ing|ion of)( a|) vehicle(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)vehicle damage(\:)</string>
+					<string>^(on |)vehicle damage(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)damag(e|ing)( a|) vehicle(\:)</string>
+					<string>^(on |)damag(e|ing)( a|) vehicle(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)vehicle destroy(\:)</string>
+					<string>^(on |)vehicle destroy(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)destr(oy(ing|)|uction of)( a|) vehicle(\:)</string>
+					<string>^(on |)destr(oy(ing|)|uction of)( a|) vehicle(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)vehicle enter(\:)</string>
+					<string>^(on |)vehicle enter(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)enter(ing|)( a|) vehicle(\:)</string>
+					<string>^(on |)enter(ing|)( a|) vehicle(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)vehicle exit(\:)</string>
+					<string>^(on |)vehicle exit(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)exit(ing|)( a|) vehicle(\:)</string>
+					<string>^(on |)exit(ing|)( a|) vehicle(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)weather change( to (clear|sunny|sun|rainy|raining|rain|thundering|thunderstorm|thunder)|)(\:)</string>
+					<string>^(on |)weather change( to (clear|sunny|sun|rainy|raining|rain|thundering|thunderstorm|thunder)|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)world init(\:)</string>
+					<string>^(on |)world init(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)world load(ing|)(\:)</string>
+					<string>^(on |)world load(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)world sav(e|ing)(\:)</string>
+					<string>^(on |)world sav(e|ing)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)world unload(ing|)(\:)</string>
+					<string>^(on |)world unload(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)zombie break(ing|)( a|)( wood(en|)|) door(\:)</string>
+					<string>^(on |)zombie break(ing|)( a|)( wood(en|)|) door(?=\:)</string>
 					<key>name</key>
 					<string>skript.section</string>
 				</dict>
@@ -1370,6 +1356,18 @@
 					<string>(text(s|)|player(s|)|string(s|)|integer(s|)|number(s|)|offline( |)player(s|)|timespan|item(stack|(| )type|s|)|weather type|enchantment type|potion(| effect )type|entity type(s|)|livingentit(y|ies)|object(s|))</string>
 					<key>name</key>
 					<string>skript.commandargs</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b((un|non|)colu?or(ed|))\b</string>
+					<key>name</key>
+					<string>skript.expressions</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\b(pitch|volume|yaw|( the |)(x|y|z)(-| )(coord(inate|)|pos(ition|)|loc(ation|))s?|( cylindrical| spherical|)(?=vector)|normalized?|angle|between|random|squared length|velocity|(x|y|z) of |around|(dot|cross)|amount|new)\b</string>
+					<key>name</key>
+					<string>skript.expressions</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -1391,7 +1389,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s|\t)(description|usage|permission( message|)|executable by|aliases|trigger|cooldown( message| bypass| storage|))(?=\:)</string>
+					<string>^(\t+|\s+)(description|usage|permission( message|)|executable by|aliases|trigger|cooldown( message| bypass| storage|))(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.meta</string>
 				</dict>
@@ -1415,85 +1413,91 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(stop( trigger| loop|)|(exit)|(escape)|((un|)cancel( | the )event))\b</string>
+					<string>\b((stop|exit)( trigger| loop|( a| the| 1 | this| all| \d+|) section| conditionals|)s?|(escape))\b</string>
 					<key>name</key>
 					<string>skript.codestops</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)any( |)move(\:)</string>
+					<string>\b(((un|)cancel( | the )event))\b</string>
+					<key>name</key>
+					<string>skript.codestops</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>^(on |)any( |)move(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)download(\:)</string>
+					<string>^(on |)download(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(player |)edit book(\:)</string>
+					<string>^(on |)(player |)edit book(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)enchant( item|)(\:)</string>
+					<string>^(on |)enchant( item|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)horse jump(\:)</string>
+					<string>^(on |)horse jump(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)inventory click(\:)</string>
+					<string>^(on |)inventory click(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)inventory (open|close)(\:)</string>
+					<string>^(on |)inventory (open|close)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(open|close) inventory(\:)</string>
+					<string>^(on |)(open|close) inventory(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)jump(ing|)(\:)</string>
+					<string>^(on |)jump(ing|)(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)(server |)(list |)ping(\:)</string>
+					<string>^(on |)(server |)(list |)ping(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.ws</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(open( virual| fake|) (anvil|furance) (to|for)( the|))( )</string>
+					<string>^(\t+|\s+)(open( virual| fake|) (anvil|furance) (to|for)( the|))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(clear|delete|receive|new|wait(|a )|halt(|a ))</string>
+					<string>^(\t+|\s+)(clear|delete|receive|new|wait(|a )|halt(|a ))</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(hide|show|reveal)</string>
+					<string>^(\t+|\s+)(hide|show|reveal)</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -1505,49 +1509,49 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(creative|survival|spectator|adventure|named|with name|with lore|parse(d|)|and|message|permission(s|)|colo(u|)red)\b</string>
+					<string>\b(creative|survival|spectator|adventure|named?|with name|with lore|parse(d|)|and|message|permission(s|))\b</string>
 					<key>name</key> 
 					<string>skript.expressions</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b((game|)rule)\b</string>
+					<string>\b((game|)rule|size|(actual(ly|)|) target(ed|) \w+)\b</string>
 					<key>name</key> 
 					<string>skript.expressions</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>((un|)glow(ing|))</string>
-					<key>name</key>
+					<key>name</key> 
 					<string>skript.glowing</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(run)( )</string>
+					<string>^(\t+|\s+)\b(run)\b</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>( (command|cmd) | as op)</string>
+					<string>\b(as op)\b</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(bungeecord connect)( )</string>
+					<string>^(\t+|\s+)(bungeecord connect)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(delete (file|folder)|df)( )</string>
+					<string>^(\t+|\s+)(delete (file|folder)|df)(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(download( from))( )</string>
+					<string>^(\t+|\s+)(download( from))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -1559,19 +1563,31 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(create (file|folder))( )</string>
+					<string>^(\t+|\s+)(create (file|folder))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)(((dis|)allow|(dis|e)nable) (fly|flight) (for|to))( )</string>
+					<string>^(\t+|\s+)(((dis|)allow|(dis|e)nable) (fly|flight) (for|to))(?= )</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s+|\t+)((set|change) slot in)( )</string>
+					<string>^(\t+|\s+)((set|change) slot in)(?= )</string>
+					<key>name</key>
+					<string>skript.effect</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>^(\t+|\s+)\b(connect)\b</string>
+					<key>name</key> 
+					<string>skript.effect</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>^(\t+|\s+)\b((un|)(cancel|ignore) (the |)( current |)( command |)cooldown)\b</string>
 					<key>name</key>
 					<string>skript.effect</string>
 				</dict>
@@ -1583,13 +1599,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(on |)any movement(\:)</string>
+					<string>^(on |)any movement(?=\:)</string>
 					<key>name</key>
 					<string>skript.section.skquery</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(current|top|open|) inventor(y|ies)\b</string>
+					<string>\b(the |)(current |top |open |)inventor(y|ies)\b</string>
 					<key>name</key>
 					<string>skript.expr.inventory</string>
 				</dict>
@@ -1601,15 +1617,9 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>^(\s*|\t*)(get|patterns|check|set|return(| type)|loop of|parse)(?=\:)</string>
+					<string>^(\t+|\s+)(get|patterns|check|set|return(| type)|loop of|parse)(?=\:)</string>
 					<key>name</key>
 					<string>skript.skriptmirror.method</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(?i)(\s+|\t+)\b(if|else if|else|while|loop(?!-)|return|continue)\b</string>
-					<key>name</key>
-					<string>skript.operator</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -1631,9 +1641,99 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(^\t+|\s+)(play)\b</string>
+					<string>(?i)\b(black)\b</string>
 					<key>name</key>
-					<string>skript.effect</string>
+					<string>skript.color.0</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(dark grey|dark gray)\b</string>
+					<key>name</key>
+					<string>skript.color.8</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(grey|light grey|gray|light gray|silver)\b</string>
+					<key>name</key>
+					<string>skript.color.7</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(white)\b</string>
+					<key>name</key>
+					<string>skript.color.f</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(blue|dark blue)\b</string>
+					<key>name</key>
+					<string>skript.color.1</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(dark cyan|dark aqua)\b</string>
+					<key>name</key>
+					<string>skript.color.3</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(cyan|aqua)\b</string>
+					<key>name</key>
+					<string>skript.color.b</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(light blue|light cyan|light aqua)\b</string>
+					<key>name</key>
+					<string>skript.color.9</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(green|dark green)\b</string>
+					<key>name</key>
+					<string>skript.color.2</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(light green|lime|lime green)\b</string>
+					<key>name</key>
+					<string>skript.color.a</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(yellow|light yellow)\b</string>
+					<key>name</key>
+					<string>skript.color.e</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(orange|gold|dark yellow)\b</string>
+					<key>name</key>
+					<string>skript.color.6</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(red|dark red)\b</string>
+					<key>name</key>
+					<string>skript.color.4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(pink|light red)\b</string>
+					<key>name</key>
+					<string>skript.color.c</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(purple|dark purple|brown|indigo)\b</string>
+					<key>name</key>
+					<string>skript.color.5</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(magenta|light purple)\b</string>
+					<key>name</key>
+					<string>skript.color.d</string>
 				</dict>
 			</array>
 		</dict>
@@ -1644,4 +1744,3 @@
 	<string>bdf45b93-232e-475f-8783-cad8f0a82773</string>
 </dict>
 </plist>
-
