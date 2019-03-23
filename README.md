@@ -21,13 +21,8 @@ A: I never liked coding without getting in the mood of coding, which requires so
 ```
 
 > Some more info? [Click Here](https://forums.skunity.com/resources/sk-st3-syntax-highlighting-open-source.710/)
-
 > Wave to me on Spigot: [Here](https://www.spigotmc.org/members/ayhamalali.101712/)
-
 > Say Hi to me on MC-Market: [Here](https://www.mc-market.org/members/46485/)
-
 > Say Hola me on SkUnity: [Here](https://forums.skunity.com/members/ayham-alali.35/)
-
 > Say Bonjour to me on Discord: `AyhamAlali#2693`
-
 > Buy me a coffee for the work I make and the time I spend for you and all the other good people: Here[](paypal.me/ayhamalali)
