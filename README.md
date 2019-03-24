@@ -31,4 +31,4 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 > :globe_with_meridians: Say Bonjour to me on Discord: `AyhamAlali#2693` 
 
-> :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](paypal.me/ayhamalali) 
+> :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](https://www.paypal.me/ayhamalali) 
