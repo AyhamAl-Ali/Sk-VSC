@@ -27,7 +27,7 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 > :globe_with_meridians: Say Hi to me on MC-Market: [Click Here](https://www.mc-market.org/members/46485/) 
 
-> :globe_with_meridians: Say Hola me on SkUnity: [Click Here](https://forums.skunity.com/members/ayham-alali.35/) 
+> :globe_with_meridians: Say Hola to me on SkUnity: [Click Here](https://forums.skunity.com/members/ayham-alali.35/) 
 
 > :globe_with_meridians: Say Bonjour to me on Discord: `AyhamAlali#2693` 
 
