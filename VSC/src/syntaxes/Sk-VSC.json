@@ -1,0 +1,1174 @@
+{
+  "scopeName": "source.skript",
+  "name": "Sk-VSC",
+  "patterns": [
+    {
+      "include": "#all"
+    }
+  ],
+  "repository": {
+    "all": {
+	  "patterns": 
+	  	[
+		{
+			"begin": "",
+			"end": "",
+			"name": "meta.everything.skript",
+			"patterns": [
+				{
+				"match": "(\\t+|\\s+)\\b(if|else if|else|while|loop(?!-)|return|continue( loop|))\\b",
+				"name": "keyword.control.skript"
+				},
+				{
+				"match": "(?i)(game( |)mode|(|all )player(s|)|victim|attacker|sender|loop-player|shooter|uuid of |'s uuid|(location of |'s location)|console)",
+				"name": "entity.playerobjects.skript"
+				},
+				{
+				"match": "(\\t*|\\s*)((loop|event)-\\w+)",
+				"name": "keyword.loopobjects.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)((format|make|create) (a |)gui slot)",
+				"name": "keyword.gui.skript"
+				},
+				{
+				"match": "\\bslots?\\b",
+				"name": "keyword.gui.skript"
+				},
+				{
+				"match": "\\b((|\\w+ |-)arg(ument(s|)|s|))\\b",
+				"name": "keyword.arguments.skript"
+				},
+				{
+				"match": "(\\+|\\-|\\*|\\/|\\^|(\\!|)=|>|<|(\\|\\|)|\\b(or)\\b)",
+				"name": "keyword.operator.skript"
+				},
+				{
+				"match": "(?i)((\\.)|(\\?)|\\!|\\@|\\$|\\%|\\&(?![abcdefmnolrk0-9])|\\,)",
+				"name": "keyword.operator.skript"
+				},
+				{
+				"match": "(\\\\|\\/|\\:\\:|\\:|\\[|\\]|\\(|\\)|\\.|\\[|\\])",
+				"name": "keywork.operator.borders.skript"
+				},
+				{
+				"match": "\\b(at|by|with)\\b",
+				"name": "keyword.control.others.skript"
+				},
+				{
+				"match": "\\b(contains?|has|have|is(n't|)|are(n't|)|does(n't| not|))\\b",
+				"name": "keyword.control.skript"
+				},
+				{
+				"match": "(?i)((&|§)0|\\<black\\>)",
+				"name": "skript.color.0"
+				},
+				{
+				"match": "(?i)((&|§)1|\\<(blue|dark blue)\\>)",
+				"name": "skript.color.1"
+				},
+				{
+				"match": "(?i)((&|§)2|\\<(green|dark green)\\>)",
+				"name": "skript.color.2"
+				},
+				{
+				"match": "(?i)((&|§)3|\\<(cyan|aqua|dark cyan|dark aqua)\\>)",
+				"name": "skript.color.3"
+				},
+				{
+				"match": "(?i)((&|§)4|\\<(red|dark red)\\>)",
+				"name": "skript.color.4"
+				},
+				{
+				"match": "(?i)((&|§)5|\\<(purple|dark purple)\\>)",
+				"name": "skript.color.5"
+				},
+				{
+				"match": "(?i)((&|§)6|\\<(orange|gold|dark yellow)\\>)",
+				"name": "skript.color.6"
+				},
+				{
+				"match": "(?i)((&|§)7|\\<(grey|light grey|gray|light gray|silver)\\>)",
+				"name": "skript.color.7"
+				},
+				{
+				"match": "(?i)((&|§)8|\\<(dark grey|dark gray)\\>)",
+				"name": "skript.color.8"
+				},
+				{
+				"match": "(?i)((&|§)9|\\<(light blue)\\>)",
+				"name": "skript.color.9"
+				},
+				{
+				"match": "(?i)((&|§)a|\\<(light green|lime|lime green)\\>)",
+				"name": "skript.color.a"
+				},
+				{
+				"match": "(?i)((&|§)b|\\<(light cyan|light aqua)\\>)",
+				"name": "skript.color.b"
+				},
+				{
+				"match": "(?i)((&|§)c|\\<(pink|light red)\\>)",
+				"name": "skript.color.c"
+				},
+				{
+				"match": "(?i)((&|§)d|\\<(magenta|light purple)\\>)",
+				"name": "skript.color.d"
+				},
+				{
+				"match": "(?i)((&|§)e|\\<(yellow|light yellow)\\>)",
+				"name": "skript.color.e"
+				},
+				{
+				"match": "(?i)((&|§)f|\\<white\\>)",
+				"name": "skript.color.f"
+				},
+				{
+				"match": "(?i)((&|§)l|\\<(bold|b)\\>)",
+				"name": "skript.color.l"
+				},
+				{
+				"match": "(?i)((&|§)o|\\<(italics|italic|i)\\>)",
+				"name": "skript.color.o"
+				},
+				{
+				"match": "(?i)((&|§)n|\\<(underlined|underline|u)\\>)",
+				"name": "skript.color.n"
+				},
+				{
+				"match": "(?i)((&|§)m|\\<(strikethrough|strike|s)\\>)",
+				"name": "skript.color.m"
+				},
+				{
+				"match": "(?i)((&|§)k|\\<magic\\>)",
+				"name": "skript.color.k"
+				},
+				{
+				"match": "(?i)((&|§)r|\\<(reset|r)\\>)",
+				"name": "skript.color.r"
+				},
+				{
+				"begin": "\\\"",
+				"end": "(\\\"|\\n)",
+				"name": "string.quoted.double.skript",
+				"patterns": [
+					{
+					"match": "(\\|\\||\\%nl\\%|\\%newline\\%)",
+					"name": "string.quoted.double.newline.skript"
+					},
+					{
+					"begin": "\\%",
+					"end": "(\\%|\\n)",
+					"name": "string.quoted.double.variable.skript"
+					},
+					{
+					"match": "\\'",
+					"name": "string.quoted.double.variable.skript"
+					},
+					{
+					"match": "\\{\\@.*?\\}",
+					"name": "string.quoted.double.options.skript"
+					},
+					{
+					"match": "(?i)((&|§)0|\\<black\\>)",
+					"name": "skript.color.0"
+					},
+					{
+					"match": "(?i)((&|§)1|\\<(blue|dark blue)\\>)",
+					"name": "skript.color.1"
+					},
+					{
+					"match": "(?i)((&|§)2|\\<(green|dark green)\\>)",
+					"name": "skript.color.2"
+					},
+					{
+					"match": "(?i)((&|§)3|\\<(cyan|aqua|dark cyan|dark aqua)\\>)",
+					"name": "skript.color.3"
+					},
+					{
+					"match": "(?i)((&|§)4|\\<(red|dark red)\\>)",
+					"name": "skript.color.4"
+					},
+					{
+					"match": "(?i)((&|§)5|\\<(purple|dark purple)\\>)",
+					"name": "skript.color.5"
+					},
+					{
+					"match": "(?i)((&|§)6|\\<(orange|gold|dark yellow)\\>)",
+					"name": "skript.color.6"
+					},
+					{
+					"match": "(?i)((&|§)7|\\<(grey|light grey|gray|light gray|silver)\\>)",
+					"name": "skript.color.7"
+					},
+					{
+					"match": "(?i)((&|§)8|\\<(dark grey|dark gray)\\>)",
+					"name": "skript.color.8"
+					},
+					{
+					"match": "(?i)((&|§)9|\\<(light blue)\\>)",
+					"name": "skript.color.9"
+					},
+					{
+					"match": "(?i)((&|§)a|\\<(light green|lime|lime green)\\>)",
+					"name": "skript.color.a"
+					},
+					{
+					"match": "(?i)((&|§)b|\\<(light cyan|light aqua)\\>)",
+					"name": "skript.color.b"
+					},
+					{
+					"match": "(?i)((&|§)c|\\<(pink|light red)\\>)",
+					"name": "skript.color.c"
+					},
+					{
+					"match": "(?i)((&|§)d|\\<(magenta|light purple)\\>)",
+					"name": "skript.color.d"
+					},
+					{
+					"match": "(?i)((&|§)e|\\<(yellow|light yellow)\\>)",
+					"name": "skript.color.e"
+					},
+					{
+					"match": "(?i)((&|§)f|\\<white\\>)",
+					"name": "skript.color.f"
+					},
+					{
+					"match": "(?i)((&|§)l|\\<(bold|b)\\>)",
+					"name": "skript.color.l"
+					},
+					{
+					"match": "(?i)((&|§)o|\\<(italics|italic|i)\\>)",
+					"name": "skript.color.o"
+					},
+					{
+					"match": "(?i)((&|§)n|\\<(underlined|underline|u)\\>)",
+					"name": "skript.color.n"
+					},
+					{
+					"match": "(?i)((&|§)m|\\<(strikethrough|strike|s)\\>)",
+					"name": "skript.color.m"
+					},
+					{
+					"match": "(?i)((&|§)k|\\<magic\\>)",
+					"name": "skript.color.k"
+					},
+					{
+					"match": "(?i)((&|§)r|\\<(reset|r)\\>)",
+					"name": "skript.color.r"
+					}
+				]
+				},
+				{
+				"match": "^(\\t+|\\s+)(ban|unban|ip(-| )ban|kick|kill|op|deop)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "( by ip| by reason of | because( of|) | on account of | due to )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)\\b(send( message |)|message|broadcast|set)\\b(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)\\b(add|give|increase|set|make|remove( all| every|)|subtract|reduce|delete|clear|reset)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "( by | from )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(dye|colo(u|)r|paint)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)((execute |)(the |)(player|console|sender) command)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(open|show|close)( )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(let|make) (player|console|sender) execute( (the |)command|)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(damage|heal|repair|feed)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(wait|halt)( for|)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)\\b(drop|play( sound|)|force|(un|)load|rotate)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "\\b(to respawn|say|fly(ing|)|start)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)((dis|)enchant)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)((local(ly|)|)suppress( the|) conflict|variable save|(missing|)conjunctions?|starting( with|) expressions? warnings?)",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "( with )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(equip|make)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "( wear )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(create|make) (a |an |)(safe |fake |)explosion(( |)effect| (of|with) (force|strength|power)|)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(ignite|set fire to|set|light|extinguish|strike lightning|strike lightning effect)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(log)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "((to|in)( files?))",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(close(( the|) inventory( view|) (to|of|for)))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(play)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)((un|)poison|cure)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "( (from|of) poison)",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(apply( potion of|))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(push|thrust)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "\\b(speed|velocity|force)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)((dis|e)nable pvp( in|))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(replace( all| every|))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(un(\\-|)shear)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(shoot|let|spawn|teleport|(un|)lea(sh|d))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(close|turn off|de(-|)activate|(toggle|switch( (the |)state of))|open|turn on|activate)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(grow|create|generate)( tree( of type|)|)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(force|((eject|dismount) (any|the) |)passenger(s|) (of|from))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "(any|the(ir|)|his|her|) vehicle(s|)",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "(ride| (dis|)mount | leave )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"begin": "\\#",
+				"end": "\\n",
+				"name": "comment.line.number-sign.skript",
+				"patterns": [
+					{
+					"match": "(?<=#)\\![^#\\n]*",
+					"name": "comment.line.number-sign.important.skript"
+					}
+				]
+				},
+				{
+				"match": "^(options|variables|aliases|import)(?=\\:$)",
+				"name": "keyword.options.skript"
+				},
+				{
+				"begin": "\\{",
+				"end": "(\\}|\\n)",
+				"name": "variable.other.skript",
+				"patterns": [
+					{
+					"match": "(\\*|\\.|\\:\\:|\\-)",
+					"name": "variable.parameter.skript"
+					},
+					{
+					"match": "\\%.*?\\%",
+					"name": "variable.external.skript"
+					},
+					{
+					"_comment": "used \\w instead of .*? to make it work for vsc",
+					"match": "(\\w)",
+					"name": "variable.string.skript"
+					}
+				]
+				},
+				{
+				"match": "^at ((0|1|)[0-9](am|pm)|(0|1|2|)[0-9]:(0|1|2|3|4|5|)[0-9])( in [a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^((on |)packet event \\w)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+					"match": "^((on |)fire)(?=\\:)",
+					"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)bed enter(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(player |)enter(ing|)( a | )bed(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)bed leav(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)( player |)leav(e|ing)( a | )bed(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)block damage(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(block |)(min(e|ing)|break)( of [a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)bucket empty(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)( player |)empty(ing|)( a | )bucket(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)bucket fill(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)( player |)fill(ing|)( a |)bucket(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(| block )burn(|ing)(| of [a-zA-Z ]+)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)( block |)can build check(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)chat(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)chunk (generat|populat)(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)chunk load(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)chunk unload(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)((right|left)(-| )|)(mouse(-| )|)click(ing|)( on [a-zA-Z ]+( (with|using|holding) [a-zA-Z ]+|)|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)((right|left)(-| )|)(mouse(-| )|)click(ing|) (with|using|holding) ([a-zA-Z ]+ on [a-zA-Z ]+)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)combust(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)command( \\\".*\\\"|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(( |)player |)connect(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)((eat|drink)(ing|)|consum(e|ing))(( of|) [a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(( |)player |)craft(ing|)(( of|) [a-zA-Z ]+)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)creeper power(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)damag(e|ing)( of [a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)death( of [a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)dispens(e|ing)( (of |)[a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)drop(ing|)( (of |)[a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(e|)xp(erience|)( orb | )spawn(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)spawn of( a(n|)| )(e|)xp(erience|)( orb|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)explo(d(e|ing)|sion)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)explosion prime(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on block |block |)fad(e|ing)( (of |)[a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)first (join|login)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)fish(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on block |block |)flow(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)block mov(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on block |block |)form(ing|)( (of |)[a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)fuel burn(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)game( |)mode change( to (creative|survival|adventure))(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)grow( of (normal|regular|oak|pine|redwood|fir|spruce|acacia|dark oak|birch|jungle))(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)heal(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(food|hunger) (level|met(er|re)|bar) chang(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on block |block |)ignit(e|ion)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)tool break(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)break(ing|) ((a|the)|)tool(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)item spawn(ing|) ((of |)[a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)(login|logging in|join(ing|))(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)(kick|being kicked)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)leaves decay(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)level( change|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)lightning( strike|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(step|walk)(ing|) (on|over) ([a-zA-Z ]+)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on block |block )physics(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)(pick( |)up|picking up)( (of |)[a-zA-Z ]+)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)pig( |)zap(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)piston extend(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)piston react(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on block |block |)(plac(e|ing)|build(ing|))( (of |)[a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)portal(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)portal create(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)portal enter(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)entering( a | )portal(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(step(ping|) on |)(a |)(pressure |)plate(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(trip|(step(ping|) on |)(a |)tripwire)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)projectile hit(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(quit(ting|)|disconnect(ing|)|log( |)out|logging out)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)redstone( current| current (chang(e|ing))|chang(e|ing))(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)region (enter|leave|exit)(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(enter|leav|exit)(ing|) of region(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)respawn(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on script |script |)(load|init|enable)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on script |script |)(unload|stop|disable)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on projectile |projectile |)shoot(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)sign (chang(e|)|edit)(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)(chang(e|)|edit)(ing|)( a|) sign(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(server|skript) (start|load|enable)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(server|skript) (stop|unload|disable)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on ore |ore |)smelt(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)smelt(ing|) of ore(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)toggl(e|ing) sneak(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)sneak toggl(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)spawn(ing|)( (of |)[a-zA-Z ]+|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on world |world |)spawn change(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)spread(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)toggl(e|ing) sprint(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)sprint toggl(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on entity |entity |)tam(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on entity |entity |)target(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on entity |entity |)un(-|)target(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)teleport(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)throw(ing|)( of|)( an|) egg(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player |player |)egg throw(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |on player(\\'s|) |player(\\'s|) |)(tool|item held|held item) chang(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)vehicle create(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)creat(e|ing|ion of)( a|) vehicle(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)vehicle damage(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)damag(e|ing)( a|) vehicle(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)vehicle destroy(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)destr(oy(ing|)|uction of)( a|) vehicle(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)vehicle enter(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)enter(ing|)( a|) vehicle(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)vehicle exit(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)exit(ing|)( a|) vehicle(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)weather change( to (clear|sunny|sun|rainy|raining|rain|thundering|thunderstorm|thunder)|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)world init(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)world load(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)world sav(e|ing)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)world unload(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)zombie break(ing|)( a|)( wood(en|)|) door(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "(text(s|)|player(s|)|string(s|)|integer(s|)|number(s|)|offline( |)player(s|)|timespan|item(stack|(| )type|s|)|weather type|enchantment type|potion(| effect )type|entity type(s|)|livingentit(y|ies)|object(s|))",
+				"name": "keyword.commandargs.skript"
+				},
+				{
+				"match": "\\b((un|non|)colu?or(ed|))\\b",
+				"name": "keyword.expressions.skript"
+				},
+				{
+				"match": "\\b(pitch|volume|yaw|( the |)(x|y|z)(-| )(coord(inate|)|pos(ition|)|loc(ation|))s?|( cylindrical| spherical|)(?=vector)|normalized?|angle|between|random|squared length|velocity|(x|y|z) of |around|(dot|cross)|amount|new)\\b",
+				"name": "keyword.expressions.skript"
+				},
+				{
+				"match": "(biome|block|boolean|chunk|click types?|colou?rs?|custom ?enchantments?|damage causes?|date|difficult(y|ies)|directions?|enchantments?|enchant(ing|ment) types?|experience|game ?modes?|gui ?inventor(y|ies)|inventory actions?|inventory types?|items?|materials?|living ?entit(y|ies)|locations?|metadata holders?|money|num(ber|)s?|objects?|offline ?players?|potion((| )effect)((| )type)s?|projectile?|recipe?|regions?|server ?icons?|slot ?types?|spawn(ing|) reasons?|teleport (cause|reason|type)s?|(text|string)s?|times?|time ?periods?|durations?|time ?spans?|tree ?types?|trees?|vectors?|(visual|particle) effects?|weather ?types?|weather conditions?|weathers?|worlds?)",
+				"name": "keyword.types.skript"
+				},
+				{
+				"match": "(clear|sunny|sun|rainy|raining|rain|thundering|thunderstorm|thunder)",
+				"name": "keyword.types.skript"
+				},
+				{
+				"match": "(int|byte|pnum|pinfo|short|long|float|array|pjson|penum|pentity|packets?)",
+				"name": "keyword.types.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(description|usage|permission( message|)|executable by|aliases|trigger|cooldown( message| bypass| storage|))(?=\\:)",
+				"name": "keyword.section.meta.skript"
+				},
+				{
+				"match": "(\\d+|\\bnow\\b)",
+				"name": "keyword.now.skript"
+				},
+				{
+				"match": "true",
+				"name": "keyword.control.boolean.true"
+				},
+				{
+				"match": "false",
+				"name": "keyword.control.boolean.false"
+				},
+				{
+				"match": "\\b((stop|exit)( trigger| loop|( a| the| 1 | this| all| \\d+|) section| conditionals|)s?|(escape))\\b",
+				"name": "keyword.stop.skript"
+				},
+				{
+				"match": "\\b(((un|)cancel( | the )event|break|shutdown))\\b",
+				"name": "keyword.stop.skript"
+				},
+				{
+				"match": "^(on |)any( |)move(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)download(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(player |)edit book(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)enchant( item|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)horse jump(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)inventory click(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)inventory (open|close)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(open|close) inventory(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)jump(ing|)(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(on |)(server |)(list |)ping(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(open( virual| fake|) (anvil|furance) (to|for)( the|))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(clear|delete|receive|new|wait(|a )|halt(|a ))",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(hide|show|reveal)",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "(minecraft |)(tick(s|)|second(s|)|minute(s|)|hour(s|)|day(s|)|year(s|))",
+				"name": "keyword.time.skript"
+				},
+				{
+				"match": "\\b(creative|survival|spectator|adventure|named?|with name|with lore|parse(d|) as|and|message|permission(s|))\\b",
+				"name": "keyword.expressions.skript"
+				},
+				{
+				"match": "\\b((game|)rule|size|(actual(ly|)|) target(ed|) \\w+)\\b",
+				"name": "keyword.expressions.skript"
+				},
+				{
+				"match": "((un|)glow(ing|))",
+				"name": "keyword.glowing.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)\\b(run)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "\\b(as op)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(bungeecord connect)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(delete (file|folder)|df)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(download( from))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "( to file )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(create (file|folder))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(((dis|)allow|(dis|e)nable) (fly|flight) (for|to))(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)((set|change) slot in)(?= )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)\\b(connect)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)\\b((un|)(cancel|ignore) (the |)( current |)( command |)cooldown)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "( hand( bar|) to )",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "^(on |)any movement(?=\\:)",
+				"name": "keyword.section.skript"
+				},
+				{
+				"match": "\\b(the |)(current |top |open |)inventor(y|ies)\\b",
+				"name": "keyword.inventory.expression.skript"
+				},
+				{
+				"match": "^(plural |)(effect|expression|condition)",
+				"name": "keyword.addon.skriptmirror.effects.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)(get|patterns|check|set|return(| type)|loop of|parse)(?=\\:)",
+				"name": "keyword.addon.skriptmirror.method.skript"
+				},
+				{
+				"match": "\\bfunction\\b",
+				"name": "keyword.control.skript"
+				},
+				{
+				"match": "^command ",
+				"name": "keyword.command.skript"
+				},
+				{
+				"match": "\\b(title|subtitle|action( |)bar|boss( |)bar)\\b",
+				"name": "keyword.effect.skript"
+				},
+				{
+				"match": "(?i)\\b(black)\\b",
+				"name": "skript.color.0"
+				},
+				{
+				"match": "(?i)\\b(dark grey|dark gray)\\b",
+				"name": "skript.color.8"
+				},
+				{
+				"match": "(?i)\\b(grey|light grey|gray|light gray|silver)\\b",
+				"name": "skript.color.7"
+				},
+				{
+				"match": "(?i)\\b(white)\\b",
+				"name": "skript.color.f"
+				},
+				{
+				"match": "(?i)\\b(blue|dark blue)\\b",
+				"name": "skript.color.1"
+				},
+				{
+				"match": "(?i)\\b(dark cyan|dark aqua)\\b",
+				"name": "skript.color.3"
+				},
+				{
+				"match": "(?i)\\b(cyan|aqua)\\b",
+				"name": "skript.color.b"
+				},
+				{
+				"match": "(?i)\\b(light blue|light cyan|light aqua)\\b",
+				"name": "skript.color.9"
+				},
+				{
+				"match": "(?i)\\b(green|dark green)\\b",
+				"name": "skript.color.2"
+				},
+				{
+				"match": "(?i)\\b(light green|lime|lime green)\\b",
+				"name": "skript.color.a"
+				},
+				{
+				"match": "(?i)\\b(yellow|light yellow)\\b",
+				"name": "skript.color.e"
+				},
+				{
+				"match": "(?i)\\b(orange|gold|dark yellow)\\b",
+				"name": "skript.color.6"
+				},
+				{
+				"match": "(?i)\\b(red|dark red)\\b",
+				"name": "skript.color.4"
+				},
+				{
+				"match": "(?i)\\b(pink|light red)\\b",
+				"name": "skript.color.c"
+				},
+				{
+				"match": "(?i)\\b(purple|dark purple|brown|indigo)\\b",
+				"name": "skript.color.5"
+				},
+				{
+				"match": "(?i)\\b(magenta|light purple)\\b",
+				"name": "skript.color.d"
+				},
+				{
+				"match": "(?<=\\.).+?(?=\\()",
+				"name": "keyword.expressions.skript"
+				},
+				{
+				"match": "(\\t+|\\s+)\\w+?(?=\\()",
+				"name": "keyword.expressions.skript"
+				},
+				{
+				"match": "^(\\t+|\\s+)\\b(write|(un|)register|call|save|insert|(pre|a)pend|assert|a?sync|end|bind|convert|branch|break|cancel|ignore|destroy|fire|(case|matches)|cav(e|ify))\\b(?= )",
+				"name": "keyword.effect.skript"
+				}
+			]
+		}
+		]
+    }
+}
+}

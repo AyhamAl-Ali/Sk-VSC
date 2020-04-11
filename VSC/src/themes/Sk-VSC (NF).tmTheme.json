@@ -1,0 +1,440 @@
+{
+  "author": "Ayham Al-Ali",
+  "name": "Sk-VSC",
+  "semanticClass": "theme.dark.sk_VSC",
+  "settings": [
+    {
+      "settings": {
+        "_background": "#263238",
+        "_caret": "#FFCC00",
+        "_foreground": "#588787",
+        "_invisibles": "#536D7982",
+        "_lineHighlight": "#1F292E",
+        "_selection": "#32464B"
+      }
+    },
+    {
+      "name": "comment.line.number-sign.skript",
+      "scope": "comment.line.number-sign.skript",
+      "settings": {
+        "foreground": "#5F5F5F"
+      }
+    },
+    {
+      "name": "comment.line.number-sign.important.skript",
+      "scope": "comment.line.number-sign.important.skript",
+      "settings": {
+        "foreground": "#DD5855"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.section.skript",
+      "settings": {
+        "foreground": "#E3E3E3",
+        "background": ""
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.section.meta.skript",
+      "settings": {
+        "foreground": "#DBDBDB"
+      }
+    },
+    {
+      "name": "keyword.operator.skript",
+      "scope": "keyword.operator.skript",
+      "settings": {
+        "foreground": "#BDFF4A"
+      }
+    },
+    {
+      "name": "keyword.control.skript",
+      "scope": "keyword.control.skript",
+      "settings": {
+        "foreground": "#D885FCD9"
+      }
+    },
+    {
+      "name": "string.quoted.double.skript",
+      "scope": "string.quoted.double.skript",
+      "settings": {
+        "foreground": "#C3E88D"
+      }
+    },
+    {
+      "name": "string.quoted.double.variable.skript",
+      "scope": "string.quoted.double.variable.skript",
+      "settings": {
+        "foreground": "#E5F8FF"
+      }
+    },
+    {
+      "name": "",
+      "scope": "variable.other.skript",
+      "settings": {
+        "foreground": "#F8516D",
+        "background": ""
+      }
+    },
+    {
+      "name": "",
+      "scope": "variable.external.skript",
+      "settings": {
+        "foreground": "#FFF952",
+      }
+    },
+    {
+      "name": "keyword.effect.skript",
+      "scope": "keyword.effect.skript",
+      "settings": {
+        "foreground": "#EDEDED",
+        "background": "",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.control.boolean.false",
+      "settings": {
+        "foreground": "#FF5555",
+        "background": "#FF7A7A1F"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.control.boolean.true",
+      "settings": {
+        "foreground": "#55FF55",
+        "background": "#66FF7A2B"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.stop.skript",
+      "settings": {
+        "foreground": "#DD5855",
+        "background": "#FF8C8C1F"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.now.skript",
+      "settings": {
+        "foreground": "#F77669",
+      }
+    },
+    {
+      "name": "",
+      "scope": "entity.playerobjects.skript",
+      "settings": {
+        "foreground": "#F9FF8F",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keywork.operator.borders.skript",
+      "settings": {
+        "foreground": "#2BDFFF",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.expressions.skript",
+      "settings": {
+        "foreground": "#EDEDED",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.control.others.skript",
+      "settings": {
+        "foreground": "#BA6DE3D9"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.commandargs.skript",
+      "settings": {
+        "foreground": "#FFBC2B"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.arguments.skript",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "",
+      "scope": "meta.everything.skript",
+      "settings": {
+        "foreground": "#D6D6D6DB"
+      }
+    },
+    {
+      "name": "",
+      "scope": "variable.parameter.skript",
+      "settings": {
+        "foreground": "#F8516D",
+      }
+    },
+    {
+      "name": "",
+      "scope": "variable.string.skript",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.glowing.skript",
+      "settings": {
+        "foreground": "#FFF942EB",
+        "background": "#FFFF3317"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.time.skript",
+      "settings": {
+        "foreground": "#FFFFFF",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.gui.skript",
+      "settings": {
+        "foreground": "#4596FFEB"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.addon.skriptmirror.method.skript",
+      "settings": {
+        "foreground": "#E3E3E3",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.addon.skriptmirror.effects.skript",
+      "settings": {
+        "foreground": "#FF3838F0",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.inventory.expression.skript",
+      "settings": {
+        "foreground": "#DB8CFF",
+      }
+    },
+    {
+      "name": "",
+      "scope": "string.quoted.double.newline.skript",
+      "settings": {
+        "foreground": "#FF3D3D",
+      }
+    },
+    {
+      "name": "",
+      "scope": "skript.text.colors",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "",
+      "scope": "string.quoted.double.options.skript",
+      "settings": {
+        "foreground": "#FFFFFF",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.command.skript",
+      "settings": {
+        "foreground": "#FFFFFF",
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.options.skript",
+      "settings": {
+        "foreground": "#F0F0F0"
+      }
+    },
+    {
+      "name": "skript.color.0",
+      "scope": "skript.color.0",
+      "settings": {
+        "foreground": "#4D4D4D"
+      }
+    },
+    {
+      "name": "skript.color.1",
+      "scope": "skript.color.1",
+      "settings": {
+        "foreground": "#2B44FF"
+      }
+    },
+    {
+      "name": "skript.color.2",
+      "scope": "skript.color.2",
+      "settings": {
+        "foreground": "#00B020"
+      }
+    },
+    {
+      "name": "skript.color.3",
+      "scope": "skript.color.3",
+      "settings": {
+        "foreground": "#009C97"
+      }
+    },
+    {
+      "name": "skript.color.4",
+      "scope": "skript.color.4",
+      "settings": {
+        "foreground": "#AD0000"
+      }
+    },
+    {
+      "name": "skript.color.5",
+      "scope": "skript.color.5",
+      "settings": {
+        "foreground": "#E600B8"
+      }
+    },
+    {
+      "name": "skript.color.6",
+      "scope": "skript.color.6",
+      "settings": {
+        "foreground": "#FF9D0A"
+      }
+    },
+    {
+      "name": "skript.color.7",
+      "scope": "skript.color.7",
+      "settings": {
+        "foreground": "#A6A6A6"
+      }
+    },
+    {
+      "name": "skript.color.8",
+      "scope": "skript.color.8",
+      "settings": {
+        "foreground": "#666666"
+      }
+    },
+    {
+      "name": "skript.color.9",
+      "scope": "skript.color.9",
+      "settings": {
+        "foreground": "#0077FFE6"
+      }
+    },
+    {
+      "name": "skript.color.a",
+      "scope": "skript.color.a",
+      "settings": {
+        "foreground": "#51FF00"
+      }
+    },
+    {
+      "name": "skript.color.b",
+      "scope": "skript.color.b",
+      "settings": {
+        "foreground": "#00FFFF"
+      }
+    },
+    {
+      "name": "skript.color.c",
+      "scope": "skript.color.c",
+      "settings": {
+        "foreground": "#FF4747"
+      }
+    },
+    {
+      "name": "skript.color.d",
+      "scope": "skript.color.d",
+      "settings": {
+        "foreground": "#FF3686"
+      }
+    },
+    {
+      "name": "skript.color.e",
+      "scope": "skript.color.e",
+      "settings": {
+        "foreground": "#FFF530"
+      }
+    },
+    {
+      "name": "skript.color.f",
+      "scope": "skript.color.f",
+      "settings": {
+        "foreground": "#FFFFFFE6"
+      }
+    },
+    {
+      "name": "skript.color.m",
+      "scope": "skript.color.m",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "skript.color.n",
+      "scope": "skript.color.n",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "skript.color.l",
+      "scope": "skript.color.l",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "skript.color.o",
+      "scope": "skript.color.o",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "skript.color.k",
+      "scope": "skript.color.k",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "skript.color.r",
+      "scope": "skript.color.r",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.types.skript",
+      "settings": {
+        "foreground": "#FFBC2B"
+      }
+    },
+    {
+      "name": "",
+      "scope": "keyword.loopobjects.skript",
+      "settings": {
+        "foreground": "#FFC94C"
+      }
+    }
+  ],
+  "uuid": "ADD7FDE7-C6BE-454B-A71A-7951ED54FB04",
+  "colorSpaceName": "sRGB",
+  "comment": "Fork of HYPExMon5ter's syntax highlighting"
+}
