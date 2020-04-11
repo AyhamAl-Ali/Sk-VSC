@@ -1,7 +1,16 @@
 # Sk-VSC (AKA Sk-ST3)
 A Modern, Colorful and creative Syntax Highlighting for Skript Language
 
+
+![](https://i.imgur.com/kENtNJa.mp4)
+
+### Extension Contents:
++ Skript Language Grammar
++ 4 Themes - All Dark (Normal, Normal-No-Formatting, Darker, Darker-No-Formatting)
+
+
 **Note:** This Syntax Highlighting was forked from @HYPExMon5ter.
+
 **Note:** This extentsion is also know as Sk-ST3 on Sublime Text 3, this version is a bit different that Sk-ST3, it has some new grammars and colors.
 
 ```

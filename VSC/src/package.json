@@ -1,11 +1,12 @@
 {
     "name": "Sk-VSC",
-    "displayName": "Sk-VSC",
+    "displayName": "Sk-VSC (Skript)",
     "description": "A Modern, Colorful and Creative Syntax Highlighting for Skript Language.",
-    "version": "2.5.0",
+    "version": "2.5.10",
+    "icon": "images/icon.png",
     "publisher": "ayhamalali",
     "engines": {
-        "vscode": "^1.00.0"
+        "vscode": "^1.35.0"
     },
     "categories": [
         "Programming Languages",
@@ -14,7 +15,7 @@
     "contributes": {
         "languages": [{
             "id": "Sk-VSC",
-            "aliases": ["Sk-VSC"],
+            "aliases": ["Sk-VSC", "Skript", "sk"],
             "extensions": [".sk"],
             "configuration": "./language-configuration.json"
         }],
