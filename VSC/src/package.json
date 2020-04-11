@@ -1,0 +1,38 @@
+{
+    "name": "Sk-VSC",
+    "displayName": "Sk-VSC",
+    "description": "A Modern, Colorful and Creative Syntax Highlighting for Skript Language.",
+    "version": "2.5.0",
+    "publisher": "ayhamalali",
+    "engines": {
+        "vscode": "^1.00.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Themes"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "Sk-VSC",
+            "aliases": ["Sk-VSC"],
+            "extensions": [".sk"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "Sk-VSC",
+            "scopeName": "source.skript",
+            "path": "./syntaxes/Sk-VSC.json"
+        }],
+        "themes": [
+        {
+            "label": "Sk-VSC",
+            "uiTheme": "vs-dark",
+            "path": "./themes/Sk-VSC.tmTheme.json"
+        }
+    ]
+    },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/AyhamAl-Ali/Sk-ST3"
+  }
+}
