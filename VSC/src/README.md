@@ -2,7 +2,7 @@
 A Modern, Colorful and creative Syntax Highlighting for Skript Language
 
 
-![](https://i.imgur.com/kENtNJa.mp4)
+![](https://i.imgur.com/kENtNJa.gif)
 
 ### Extension Contents:
 + Skript Language Grammar
