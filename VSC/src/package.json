@@ -1,12 +1,11 @@
 {
     "name": "Sk-VSC",
     "displayName": "Sk-VSC (Skript)",
-    "description": "A Modern, Colorful and Creative Syntax Highlighting for Skript Language.",
-    "version": "2.5.10",
-    "icon": "images/icon.png",
+    "description": "A Modern, Colorful and creative Syntax Highlighting for Skript",
+    "version": "2.4.2",
     "publisher": "ayhamalali",
     "engines": {
-        "vscode": "^1.35.0"
+        "vscode": "^1.40.0"
     },
     "categories": [
         "Programming Languages",
@@ -29,11 +28,22 @@
             "label": "Sk-VSC",
             "uiTheme": "vs-dark",
             "path": "./themes/Sk-VSC.tmTheme.json"
+        },
+        {
+            "label": "Sk-VSC (Darker)",
+            "uiTheme": "vs-dark",
+            "path": "./themes/Sk-VSC (Darker).tmTheme.json"
+        },
+        {
+            "label": "Sk-VSC (NF)",
+            "uiTheme": "vs-dark",
+            "path": "./themes/Sk-VSC (NF).tmTheme.json"
+        },
+        {
+            "label": "Sk-VSC (Darker-NF)",
+            "uiTheme": "vs-dark",
+            "path": "./themes/Sk-VSC (Darker-NF).tmTheme.json"
         }
     ]
-    },
-  "repository": {
-    "type": "github",
-    "url": "https://github.com/AyhamAl-Ali/Sk-ST3"
-  }
+    }
 }
