@@ -23,12 +23,14 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 > :bulb: Some more info? [Click Here](https://forums.skunity.com/resources/sk-st3-syntax-highlighting-open-source.710/) 
 
-> :wave: Wave to me on Spigot: [Click Here](https://www.spigotmc.org/members/ayhamalali.101712/) 
+> Spigot: [Click Here](https://www.spigotmc.org/members/ayhamalali.101712/) 
 
-> :globe_with_meridians: Say Hi to me on MC-Market: [Click Here](https://www.mc-market.org/members/46485/) 
+> MC-Market: [Click Here](https://www.mc-market.org/members/46485/) 
 
-> :globe_with_meridians: Say Hola to me on SkUnity: [Click Here](https://forums.skunity.com/members/ayham-alali.35/) 
+> SkUnity: [Click Here](https://forums.skunity.com/members/ayham-alali.35/) 
 
-> :globe_with_meridians: Say Bonjour to me on Discord: `AyhamAlali#2693` 
+> Discord: `AyhamAlali#2693` 
+
+> VSC Extension: [Click Here](https://marketplace.visualstudio.com/items?itemName=ayhamalali.Sk-VSC)
 
 > :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](https://www.paypal.me/ayhamalali) 
