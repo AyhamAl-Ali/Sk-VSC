@@ -1,15 +1,15 @@
-# Sk-ST3
-A Modern, Colorful and creative Syntax Highlighting for Skript on ST3
+# Sk-ST3 - Sk-VSC
+A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Sublime Text 3 and Visual Studio Code
 
-Note: This Syntax Highlighting belongs to @HYPExMon5ter and I've only forked this because I liked to make my own version of this Resource.
+**Note:** This Syntax Highlighting is a fork of @HYPExMon5ter's Syntax Highlighting.
 
 ```
 
 Q: What will you provide in this Forked version?
-A: I will be adding new syntax highlighting with my own colors.
+A: I will be adding new syntax highlighting with new colors.
 
 Q: Are you going to continue with this?
-A: Probably, I'm currently almost inactive due to my study and final exams that will begin in Jan 2019, so I will be updating this slowly till I finish my last couple exams and comeback again.
+A: Probably, I do a lot of coding with Skript Language so I will keep this resource active as I can and add new syntaxes to it.
 
 Q: Can we report issues and bugs or/and suggest new stuff on this resource?
 A: Yes, you can use the issues section to report issues or/and suggest new syntax/colors.
