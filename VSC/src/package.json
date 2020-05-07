@@ -1,49 +1,79 @@
 {
-    "name": "Sk-VSC",
-    "displayName": "Sk-VSC (Skript)",
-    "description": "A Modern, Colorful and creative Syntax Highlighting for Skript",
-    "version": "2.5.11",
-    "publisher": "ayhamalali",
-    "engines": {
-        "vscode": "^1.35.0"
-    },
-    "categories": [
-        "Programming Languages",
-        "Themes"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "Sk-VSC",
-            "aliases": ["Sk-VSC", "Skript", "sk"],
-            "extensions": [".sk"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "Sk-VSC",
-            "scopeName": "source.skript",
-            "path": "./syntaxes/Sk-VSC.json"
-        }],
-        "themes": [
-        {
-            "label": "Sk-VSC",
-            "uiTheme": "vs-dark",
-            "path": "./themes/Sk-VSC.tmTheme.json"
-        },
-        {
-            "label": "Sk-VSC (Darker)",
-            "uiTheme": "vs-dark",
-            "path": "./themes/Sk-VSC (Darker).tmTheme.json"
-        },
-        {
-            "label": "Sk-VSC (NF)",
-            "uiTheme": "vs-dark",
-            "path": "./themes/Sk-VSC (NF).tmTheme.json"
-        },
-        {
-            "label": "Sk-VSC (Darker-NF)",
-            "uiTheme": "vs-dark",
-            "path": "./themes/Sk-VSC (Darker-NF).tmTheme.json"
-        }
-    ]
-    }
+	"name": "Sk-VSC",
+	"displayName": "Sk-VSC (Skript)",
+	"description": "A Modern, Colorful and Creative Syntax Highlighting for Skript Language.",
+	"version": "2.6.1",
+	"icon": "images/icon.png",
+	"publisher": "ayhamalali",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Themes"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "Sk-VSC",
+				"aliases": [
+					"Sk-VSC",
+					"Skript",
+					"sk"
+				],
+				"extensions": [
+					".sk"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "Sk-VSC",
+				"scopeName": "source.skript",
+				"path": "./syntaxes/Sk-VSC.json"
+			}
+		],
+		"themes": [
+			{
+				"label": "Sk-VSC",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sk-VSC.tmTheme.json"
+			},
+			{
+				"label": "Sk-VSC (Darker)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sk-VSC (Darker).tmTheme.json"
+			},
+			{
+				"label": "Sk-VSC (NF)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sk-VSC (NF).tmTheme.json"
+			},
+			{
+				"label": "Sk-VSC (Darker-NF)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sk-VSC (Darker-NF).tmTheme.json"
+			},
+			{
+				"label": "Sk-VSC (Material Palenight HC)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sk-VSC (Material Palenight HC).tmTheme.json"
+			},
+			{
+				"label": "Sk-VSC (Material Palenight)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sk-VSC (Material Palenight).tmTheme.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/AyhamAl-Ali/Sk-ST3"
+	},
+	"__metadata": {
+		"id": "e8c20548-3f6b-4cb7-8924-741d3a5ea676",
+		"publisherId": "f9aefc8e-ba50-451e-ae8a-6b23fa73e851",
+		"publisherDisplayName": "Ayham Al-Ali"
+	}
 }

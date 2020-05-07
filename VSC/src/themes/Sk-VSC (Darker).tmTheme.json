@@ -17,7 +17,7 @@
       "name": "comment.line.number-sign.skript",
       "scope": "comment.line.number-sign.skript",
       "settings": {
-        "fontStyle": "",
+        "fontStyle": "italic",
         "foreground": "#5F5F5F"
       }
     },
@@ -25,7 +25,16 @@
       "name": "comment.line.number-sign.important.skript",
       "scope": "comment.line.number-sign.important.skript",
       "settings": {
+        "fontStyle": "italic",
         "foreground": "#BF4743"
+      }
+    },
+    {
+      "name": "comment.line.number-sign.important.two.skript",
+      "scope": "comment.line.number-sign.important.two.skript",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#5D8A3B"
       }
     },
     {

@@ -1,8 +1,8 @@
-# Sk-VSC (AKA Sk-ST3)
+# Sk-VSC (aka Sk-ST3)
 A Modern, Colorful and creative Syntax Highlighting for Skript Language
 
 
-![](https://i.imgur.com/kENtNJa.gif)
+![](https://i.imgur.com/biRm02z.gif)
 
 ### Extension Contents:
 + Skript Language Grammar
@@ -41,4 +41,11 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 > :globe_with_meridians: Say Bonjour to me on Discord: `AyhamAlali#2693` 
 
-> :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](https://www.paypal.me/ayhamalali) 
+> :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](https://www.paypal.me/
+ayhamalali) 
+
+### Screenshots
+
+![](https://i.imgur.com/nTssZUF.png)
+![](https://i.imgur.com/4EKkDDg.png)
+![](https://i.imgur.com/kENtNJa.gif)

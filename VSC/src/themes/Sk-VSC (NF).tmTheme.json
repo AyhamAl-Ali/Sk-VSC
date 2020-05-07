@@ -28,6 +28,13 @@
       }
     },
     {
+      "name": "comment.line.number-sign.important.two.skript",
+      "scope": "comment.line.number-sign.important.two.skript",
+      "settings": {
+        "foreground": "#5D8A3B"
+      }
+    },
+    {
       "name": "",
       "scope": "keyword.section.skript",
       "settings": {
