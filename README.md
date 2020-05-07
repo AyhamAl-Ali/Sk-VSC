@@ -5,8 +5,7 @@ A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Subli
 
 
 # Changelog (v2.6.0)
-### VSCode
-#### 7th of May 2020
+### VSCode (7th of May 2020)
 
 > (+) Added new comment style **'#!!'** without the single qoutes, it will show as dark green comment (for dark green comments fans)
 
