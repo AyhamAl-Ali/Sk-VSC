@@ -65,4 +65,6 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 > VSC Extension: [Click Here](https://marketplace.visualstudio.com/items?itemName=ayhamalali.Sk-VSC)
 
+> SK3 Extension: [Click Here](https://packagecontrol.io/packages/Sk-ST3)
+
 > :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](https://www.paypal.me/ayhamalali) 
