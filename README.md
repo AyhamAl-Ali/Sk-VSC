@@ -3,6 +3,10 @@ A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Subli
 
 **Note:** This Syntax Highlighting is a fork of @HYPExMon5ter's Syntax Highlighting.
 
+# Changelog (v2.6.3)
+### VSCode (26th of Oct 2020)
+
+> Added new theme 'Shades of Purple'
 
 # Changelog (v2.6.0)
 ### VSCode (7th of May 2020)
