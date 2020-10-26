@@ -1,3 +1,8 @@
+# Changelog (v2.6.3)
+
+> Added new theme 'Shades of Purple'
+
+
 # Changelog (v2.6.0)
 
 > (+) Added new comment style **'#!!'** without the single qoutes, it will show as dark green comment (for dark green comments fans)

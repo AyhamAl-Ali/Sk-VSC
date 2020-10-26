@@ -2,7 +2,7 @@
 	"name": "Sk-VSC",
 	"displayName": "Sk-VSC (Skript)",
 	"description": "A Modern, Colorful and Creative Syntax Highlighting for Skript Language.",
-	"version": "2.6.1",
+	"version": "2.6.3",
 	"icon": "images/icon.png",
 	"publisher": "ayhamalali",
 	"engines": {
@@ -64,6 +64,11 @@
 				"label": "Sk-VSC (Material Palenight)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Sk-VSC (Material Palenight).tmTheme.json"
+			},
+			{
+				"label": "Sk-VSC (Sahdes of Purple)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sk-VSC (Shades of Purple).tmTheme.json"
 			}
 		]
 	},
