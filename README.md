@@ -3,7 +3,8 @@ A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Subli
 
 **Note:** This Syntax Highlighting is a fork of @HYPExMon5ter's Syntax Highlighting.
 
-**Feel free to contribue and add your own/others themes and create a pull request**
+
+# Feel free to contribue and add your own/others themes and create a pull request
 
 Adding your own theme to this syntax is pretty easy
 
