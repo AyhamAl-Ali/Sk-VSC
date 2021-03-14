@@ -3,6 +3,29 @@ A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Subli
 
 **Note:** This Syntax Highlighting is a fork of @HYPExMon5ter's Syntax Highlighting.
 
+**Feel free to contribue and add your own/others themes and create a pull request**
+Adding your own theme to this syntax is pretty easy
+1- Duplicate any theme from the syntax themes (.tmTheme) [located here](https://github.com/AyhamAl-Ali/Sk-ST3/tree/master/ST3/src)
+2- Change the values of the colors from line **20** to line **31** to the values you like or from the other theme
+```
+				<key>background</key>
+				<string>#263238</string>
+				<key>caret</key>
+				<string>#FFCC00</string>
+				<key>foreground</key>
+				<string>#588787</string>
+				<key>invisibles</key>
+				<string>#536D7982</string>
+				<key>lineHighlight</key>
+				<string>#1F292E</string>
+				<key>selection</key>
+				<string>#32464B</string>
+``
+3- Test it and make sure it works
+4- Create a pull request 
+
+
+
 # Changelog (v2.6.3)
 ### VSCode (26th of Oct 2020)
 
