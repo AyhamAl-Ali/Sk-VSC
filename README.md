@@ -20,7 +20,8 @@ Adding your own theme to this syntax is pretty easy
 <string>#1F292E</string>
 <key>selection</key>
 <string>#32464B</string>
-``
+```
+
 3- Test it and make sure it works
 4- Create a pull request 
 
