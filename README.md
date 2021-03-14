@@ -6,7 +6,7 @@ A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Subli
 
 # Feel free to contribute and add your own/others themes and create a pull request
 
-Adding your own theme to this syntax is pretty easy
+Adding your own theme to this syntax (Sublime Text 3 version) is pretty easy
 
 1- Duplicate any theme from the syntax themes (.tmTheme) [located here](https://github.com/AyhamAl-Ali/Sk-ST3/tree/master/ST3/src)
 
