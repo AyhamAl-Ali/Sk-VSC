@@ -1,7 +1,7 @@
 # Sk-ST3 - Sk-VSC
 A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Sublime Text 3 and Visual Studio Code
 
-**Note:** This Syntax Highlighting is a fork of @HYPExMon5ter's Syntax Highlighting but much more updated.
+**Note:** This Syntax Highlighting was based on @HYPExMon5ter's Syntax Highlighting but much more updated.
 
 
 # Feel free to contribute and add your own/others themes and create a pull request
