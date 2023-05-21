@@ -1,4 +1,4 @@
-# Changelog (v2.5.4)
+# Changelog (v2.6.4)
 
 > Added folding! Useful for categorising your code!
 
