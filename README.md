@@ -33,7 +33,7 @@ Adding your own theme to this syntax (Sublime Text 3 version) is pretty easy
 
 
 
-# Chanelog (v2.5.4)
+# Chanelog (v2.6.4)
 
 > Added folding! Useful for categorising your code!
 
