@@ -33,13 +33,23 @@ Adding your own theme to this syntax (Sublime Text 3 version) is pretty easy
 
 
 
+# Chanelog (v2.5.4)
+
+> Added folding! Useful for categorising your code!
+
+Example:
+```
+#!FOLD [NAME]
+   > YOUR CODE HERE
+#!UNFOLD
+```
+
 # Changelog (v2.6.3)
-### VSCode (26th of Oct 2020)
 
 > Added new theme 'Shades of Purple'
 
+
 # Changelog (v2.6.0)
-### VSCode (7th of May 2020)
 
 > (+) Added new comment style **'#!!'** without the single qoutes, it will show as dark green comment (for dark green comments fans)
 
