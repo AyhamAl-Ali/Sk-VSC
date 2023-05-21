@@ -40,7 +40,7 @@ Adding your own theme to this syntax (Sublime Text 3 version) is pretty easy
 Example:
 ```
 #!FOLD [NAME]
-   > YOUR CODE HERE
+> YOUR CODE HERE
 #!UNFOLD
 ```
 
