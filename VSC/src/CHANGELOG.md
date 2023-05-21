@@ -5,7 +5,7 @@
 Example:
 ```
 #!FOLD [NAME]
-   > YOUR CODE HERE
+> YOUR CODE HERE
 #!UNFOLD
 ```
 
