@@ -1,3 +1,14 @@
+# Chanelog (v2.5.4)
+
+> Added folding! Useful for categorising your code!
+
+Example:
+```
+#!FOLD [NAME]
+   > YOUR CODE HERE
+#!UNFOLD
+```
+
 # Changelog (v2.6.3)
 
 > Added new theme 'Shades of Purple'
