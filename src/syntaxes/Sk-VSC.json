@@ -1,6 +1,6 @@
 {
 	"scopeName": "source.skript",
-	"name": "Sk-VSC",
+	"name": "skript",
 	"patterns": [
 	  {
 		"include": "#all"
@@ -8,7 +8,7 @@
 	],
 	"repository": {
 	  "all": {
-		"patterns": 
+		"patterns":
 			[
 		  {
 			  "begin": "",

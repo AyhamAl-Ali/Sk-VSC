@@ -12,12 +12,16 @@
 		"Programming Languages",
 		"Themes"
 	],
+	"keywords": [
+		"skript",
+		"sk-vsc",
+		"skript-highlighting"
+	],
 	"contributes": {
 		"languages": [
 			{
-				"id": "Sk-VSC",
+				"id": "skript",
 				"aliases": [
-					"Sk-VSC",
 					"Skript",
 					"sk"
 				],
@@ -29,7 +33,7 @@
 		],
 		"grammars": [
 			{
-				"language": "Sk-VSC",
+				"language": "skript",
 				"scopeName": "source.skript",
 				"path": "./syntaxes/Sk-VSC.json"
 			}
