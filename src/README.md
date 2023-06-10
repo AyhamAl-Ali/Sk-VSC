@@ -32,7 +32,7 @@ A: I never liked coding without getting in the mood of coding, which requires so
 > :wave: Wave to me on Spigot: [Click Here](https://www.spigotmc.org/members/ayhamalali.101712/)  
 > :globe_with_meridians: Say Hi to me on MC-Market: [Click Here](https://www.mc-market.org/members/46485/)  
 > :globe_with_meridians: Say Hola to me on SkUnity: [Click Here](https://forums.skunity.com/members/ayham-alali.35/)  
-> :globe_with_meridians: Say Bonjour to me on Discord: `AyhamAlali#2693`  
+> :globe_with_meridians: Say Bonjour to me on Discord: `ayhamalali`  
 > :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](https://www.paypal.me/
 ayhamalali)  
 
