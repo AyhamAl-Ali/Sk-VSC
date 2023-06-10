@@ -1,8 +1,8 @@
 {
 	"name": "Sk-VSC",
 	"displayName": "Sk-VSC (Skript)",
-	"description": "A Modern, Colorful and Creative Syntax Highlighting for Skript Language.",
-	"version": "2.6.3",
+	"description": "A modern, colorful and creative Syntax Highlighting for Skript Language.",
+	"version": "2.6.5",
 	"icon": "images/icon.png",
 	"publisher": "ayhamalali",
 	"engines": {
@@ -78,7 +78,7 @@
 	},
 	"repository": {
 		"type": "github",
-		"url": "https://github.com/AyhamAl-Ali/Sk-ST3"
+		"url": "https://github.com/AyhamAl-Ali/Sk-VSC"
 	},
 	"__metadata": {
 		"id": "e8c20548-3f6b-4cb7-8924-741d3a5ea676",
