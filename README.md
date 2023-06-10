@@ -33,7 +33,7 @@ A: I never liked coding without getting in the mood of coding, which requires so
 # Chanelog
 ####  v2.6.5
 
-> Fixed some compatibility issues with other extensions (Thanks @TheLividX)
+> Fixed some compatibility issues with other extensions (Thanks @TheLividX)  
 > Dropped support for Sublime Text 3 (unmaintained anymore)
 
 Example:
