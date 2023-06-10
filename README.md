@@ -1,39 +1,22 @@
-# Sk-ST3 - Sk-VSC
-A Modern, Colorful and Creative Syntax Highlighting for Skript Language on Sublime Text 3 and Visual Studio Code
+# Sk-VSC
+A modern, colorful and creative Syntax Highlighting for **Skript Language** on **Visual Studio Code**
 
-**Note:** This Syntax Highlighting was based on @HYPExMon5ter's Syntax Highlighting but much more updated.
+> Original outdated syntax highlighting made by @HYPExMon5ter's.
 
+## Chanelog
+####  v2.6.5
 
-# Feel free to contribute and add your own/others themes and create a pull request
+> Fixed some compatibility issues with other extensions (Thanks @TheLividX)
+> Dropped support for Sublime Text 3 (unmaintained anymore)
 
-Adding your own theme to this syntax (Sublime Text 3 version) is pretty easy
-
-1- Duplicate any theme from the syntax themes (.tmTheme) [located here](https://github.com/AyhamAl-Ali/Sk-ST3/tree/master/ST3/src)
-
-2- Change the values of the colors from line **20** to line **31** to the values you like or from the other theme
-
+Example:
 ```
-<key>background</key>
-<string>#263238</string>
-<key>caret</key>
-<string>#FFCC00</string>
-<key>foreground</key>
-<string>#588787</string>
-<key>invisibles</key>
-<string>#536D7982</string>
-<key>lineHighlight</key>
-<string>#1F292E</string>
-<key>selection</key>
-<string>#32464B</string>
+#!FOLD [NAME]
+> YOUR CODE HERE
+#!UNFOLD
 ```
 
-3- Test it and make sure it works
-
-4- Create a pull request 
-
-
-
-# Chanelog (v2.6.4)
+####  v2.6.4
 
 > Added folding! Useful for categorising your code!
 
@@ -44,38 +27,9 @@ Example:
 #!UNFOLD
 ```
 
-# Changelog (v2.6.3)
+#### v2.6.3
 
 > Added new theme 'Shades of Purple'
-
-
-# Changelog (v2.6.0)
-
-> (+) Added new comment style **'#!!'** without the single qoutes, it will show as dark green comment (for dark green comments fans)
-
-> (+) Added new theme (Material Palenight & Material Palenight High Contrast)
-
-> (+) Changed comments to italic
-
-> (\*) Improved comments highlighting handling
-
-> (\*) Fixed boundries of many skript types such as 'int'
-
-#### Added some new grammars:
-```
- - [un]load[ed]
- - (of|on) file
- - server command
- - exist[s]
- - empty
- - y[a]ml (value|nodes|list|node[s with] keys)
- - play[ed]
- - (this|server|before)
- - (complete|absolute|path|absorption hearts|accepted items|tablist|group|score|all|holo[gram]s)
- - for
- ```
-
-
 
 # Links
 
@@ -98,17 +52,9 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 
 > :bulb: Some more info? [Click Here](https://forums.skunity.com/resources/sk-st3-syntax-highlighting-open-source.710/) 
-
 > Spigot: [Click Here](https://www.spigotmc.org/members/ayhamalali.101712/) 
-
 > MC-Market: [Click Here](https://www.mc-market.org/members/46485/) 
-
 > SkUnity: [Click Here](https://forums.skunity.com/members/ayham-alali.35/) 
-
-> Discord: `AyhamAlali#2693` 
-
+> Discord: `ayhamalali`  or (`AyhamAlAli#0001`)
 > VSC Extension: [Click Here](https://marketplace.visualstudio.com/items?itemName=ayhamalali.Sk-VSC)
-
-> SK3 Extension: [Click Here](https://packagecontrol.io/packages/Sk-ST3)
-
 > :coffee: Buy me a coffee for the work I make and the time I spend for you and all the other good people: [Click Here](https://www.paypal.me/ayhamalali) 
