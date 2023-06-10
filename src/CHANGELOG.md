@@ -1,5 +1,10 @@
-# Changelog (v2.6.4)
+# Changelog
 
+### v2.6.5
+> Fixed some compatibility issues with other extensions (Thanks @TheLividX)  
+> Dropped support for Sublime Text 3 (unmaintained anymore)  
+
+### v2.6.4
 > Added folding! Useful for categorising your code!
 
 Example:
@@ -9,12 +14,12 @@ Example:
 #!UNFOLD
 ```
 
-# Changelog (v2.6.3)
+### v2.6.3
 
 > Added new theme 'Shades of Purple'
 
 
-# Changelog (v2.6.0)
+### v2.6.0
 
 > (+) Added new comment style **'#!!'** without the single qoutes, it will show as dark green comment (for dark green comments fans)
 
@@ -26,7 +31,7 @@ Example:
 
 > (\*) Fixed boundries of many skript types such as 'int'
 
-#### Added some new grammars:
+Added some new grammars:
 ```
  - [un]load[ed]
  - (of|on) file
