@@ -1,6 +1,6 @@
 {
 	"scopeName": "source.skript",
-	"name": "skript",
+	"name": "Skript",
 	"patterns": [
 	  {
 		"include": "#all"
