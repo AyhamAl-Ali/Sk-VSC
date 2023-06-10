@@ -1,7 +1,7 @@
 # Sk-VSC
 A modern, colorful and creative Syntax Highlighting for **Skript Language** on **Visual Studio Code**
 
-> Original outdated syntax highlighting made by @HYPExMon5ter's.
+> Original outdated syntax highlighting made by [@HYPExMon5ter](https://forums.skunity.com/resources/sublime-text-3-syntax-highlighting.240/).
 
 ## Chanelog
 ####  v2.6.5
