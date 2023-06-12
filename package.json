@@ -2,7 +2,7 @@
 	"name": "Sk-VSC",
 	"displayName": "Sk-VSC (Skript)",
 	"description": "A modern, colorful and creative Syntax Highlighting for Skript Language.",
-	"version": "2.6.5",
+	"version": "2.6.6",
 	"icon": "images/icon.png",
 	"publisher": "ayhamalali",
 	"engines": {
