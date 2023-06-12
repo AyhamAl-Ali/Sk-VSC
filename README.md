@@ -1,5 +1,6 @@
 # Sk-VSC (Skript for Visual Studio Code)
-> AKA **Sk-ST3**
+> AKA **Sk-ST3**  
+
 A modern, colorful and creative Syntax Highlighting for **Skript Language** on **Visual Studio Code**  
 🚩 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ayhamalali.Sk-VSC)
 
@@ -42,33 +43,4 @@ A: I never liked coding without getting in the mood of coding, which requires so
 
 ![](https://i.imgur.com/nTssZUF.png)
 ![](https://i.imgur.com/4EKkDDg.png)
-![](https://i.imgur.com/kENtNJa.gif)
-
-
-# Chanelog
-####  v2.6.5
-
-> Fixed some compatibility issues with other extensions (Thanks @TheLividX)  
-> Dropped support for Sublime Text 3 (unmaintained anymore)
-
-Example:
-```
-#!FOLD [NAME]
-> YOUR CODE HERE
-#!UNFOLD
-```
-
-####  v2.6.4
-
-> Added folding! Useful for categorising your code!
-
-Example:
-```
-#!FOLD [NAME]
-> YOUR CODE HERE
-#!UNFOLD
-```
-
-#### v2.6.3
-
-> Added new theme 'Shades of Purple'
+![](https://i.imgur.com/kENtNJa.gif)  
