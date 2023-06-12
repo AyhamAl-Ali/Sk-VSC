@@ -1,5 +1,8 @@
 # Changelog
 
+### v2.6.6
+> Update Icon
+
 ### v2.6.5
 > Fixed some compatibility issues with other extensions (Thanks @TheLividX)  
 > Dropped support for Sublime Text 3 (unmaintained anymore)  
